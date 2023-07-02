@@ -1,0 +1,77 @@
+.courses {
+    border-collapse: collapse;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .courses td, #courses th {
+    padding:.5em 2em .5em 2em;
+  }
+  
+  .courses tr:nth-child(even){
+    background-color: #B7D1DA;
+    color: #232323;}
+  .courses tr:nth-child(odd){
+    background-color: #DDDDDD;
+    color:#232323;}
+  
+  .courses tr:hover {
+    background-color: #232323; 
+    color:#DDDDDD;
+    transition: 0.2s;}
+  
+    #graph{
+        margin:2%;
+    }
+
+  .experience{
+    max-width: 35vw;
+    position: relative;
+    margin: auto;
+    overflow:hidden;
+    height: auto;
+    margin-bottom:6%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    outline:none;
+    background-color:#232323;
+    color:#DDDDDD;
+   
+  }
+
+  .card-title{
+    text-decoration:underline;
+    margin:3%;
+  }
+
+  .card:hover .secret{
+    display:block;
+    line-height:1.5em;
+  }
+
+  .experience:hover{
+    background-color:#B7D1DA;
+    color:#232323;
+  }
+
+  .card-text{
+    background-color:#DDDDDD;
+    color:#232323;
+    padding:3%;
+    
+  }
+  .card-body{
+    padding:0;
+  }
+
+  .text {
+    color:black;
+    font-size: 15px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #D9D9D9;
+    transition: 0.3s;
+  }

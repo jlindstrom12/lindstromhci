@@ -1,0 +1,58 @@
+body {
+	font-family: serif;
+	/* Set all font in the page to Helvetica with font formatting */
+	font-size: 100%; /* Generally set the font-size to 100% in the body 
+	                    - you can then change with em in the other areas */
+	line-height: 1.7em; /* The line-height property in CSS controls the space 
+	                       between lines of text. */
+	color: #000000; /* Hex Color Black */
+    background-color: #ECECEC;
+    background-image: url('./Images/me.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}   
+#content{
+    width:80%;
+    height:100%;
+    float:right;
+    padding: 3%;
+}
+
+h1{
+    color:#232323;
+    /* color:#516267; */
+    font-size: 200%;
+    text-decoration:underline;
+    margin-bottom:2%;
+    font-weight:bold;
+}
+
+.tab { text-indent:40px }
+
+
+
+.but a:hover{
+    background-color:#B7D1DA;
+    color:#232323;
+}
+
+.nav-pills{
+    color:#232323;
+    font-weight:bold;
+    --bs-nav-link-color:  #232323;
+    --bs-nav-link-hover-color:  #B7D1DA;
+    --bs-nav-pills-link-active-bg: #B7D1DA;
+    --bs-nav-pills-link-active-color: #232323;
+  }
+
+.centered{
+    justify-content:center; 
+    text-align:center; 
+    display:flex;
+}
+
+.secret{
+    display:none;
+}

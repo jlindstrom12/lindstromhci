@@ -1,0 +1,35 @@
+iframe{
+    margin:2em;
+
+
+}
+
+#video{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+h2{
+    text-decoration:underline;
+    font-size:150%;
+}
+
+
+#project_images{
+    display:flex;
+    justify-content:center;
+    text-align:center;
+    padding:2vh;
+}
+#project_images img{
+    width:100%;
+    height:auto;
+    margin:auto;
+}
+#project_images h2{
+    float:left;
+    margin-bottom:2vh;
+}
+
+
