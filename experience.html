@@ -16,50 +16,8 @@
     <script src="https://cdn.plot.ly/plotly-2.18.2.min.js"></script>
     <script src="javascript/jquery-3.6.0.min.js" type="text/javascript"></script>
     <script src="javascript/jquery-ui.min.js" type="text/javascript"></script>
-    <script src="http://code.highcharts.com/highcharts.js"></script>
-    <script src="http://code.highcharts.com/modules/exporting.js"></script>
-    <script>
-        $(function(){
-            $('#graph').highcharts({
-                chart: {
-        type: 'line',
-        backgroundColor: '#DDDDDD',
-    },
-    title: {
-        text: 'GPA',
-        style:{
-          color: "#232323"
-        }
-    },
-   
-    colors: ["#232323","#516267"],
-    xAxis: {
-        categories: ['F21', 'S22', 'F22', 'S23']
-    },
-    yAxis: {
-        title: {
-            text: 'GPA'
-        }
-    },
-  
-    plotOptions: {
-        line: {
-            dataLabels: {
-                enabled: true
-            },
-            enableMouseTracking: true
-        }
-    },
-    series: [{
-        name: 'Semester',
-        data: [3.18, 3.63, 3.79, 3.82],
-    }, {
-        name: 'Cumulative',
-        data: [3.18, 3.40, 3.53, 3.61]
-    }]
-});
-});
-</script>
+    <script src="https://cdn.plot.ly/plotly-2.18.2.min.js"></script>
+    
   </head>
 
     
@@ -68,7 +26,7 @@
   <div class="d-flex flex-column  p-3 text-bg-dark" id="sidebar">
     <a href="index.html" class=" nav_side d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none">
       <img src='./Images/logo2.png' style = "height:45px; width:auto;" alt="My CMU Swim and Dive Photos"/>
-      <span class="fs-4 ">&nbsp;&nbsp;Jonathan Lindstrom</span>
+      <span class="fs-5 ">&nbsp;&nbsp;Jonathan Lindstrom</span>
     </a>
     <hr>
     <ul class="nav nav-pills flex-column mb-auto">
@@ -217,7 +175,10 @@
             </div>
           </div>
           <div class="col-lg-6">
-            <div id="graph"></div>
+            <div id="mydays">
+              <!-- Plotly chart will be drawn inside this DIV -->
+            </div>
+            <script  src="script/plot.js"></script>
             <div class = "centered">
               <div class="btn-group but"  role="group" onclick="window.open('Docs/transcript.pdf');" style=" background-color: #232323; width: 40%; margin-right:3%;"><a class="btn btn-outline-light text-uppercase" role="button">Transcript</a></div>
               <div class="btn-group but"  role="group" onclick="window.open('Docs/resume.pdf');" style=" background-color: #232323; width: 40%;"><a class="btn btn-outline-light text-uppercase" role="button">Resume</a></div>
