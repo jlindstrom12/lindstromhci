@@ -38,8 +38,12 @@
    
   }
 
-  .card-title{
+  .card-title h5{
     text-decoration:underline;
+    
+  }
+
+  .card-title{
     margin:3%;
   }
 

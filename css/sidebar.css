@@ -15,7 +15,7 @@
   background-color: RGBA(35,35,35,var(--bs-bg-opacity,1))!important;
 }
 
-#sidebar a.active{
+#sidebar a.active:hover, #sidebar a.active{
   background-color: #B7D1DA;
   color:#232323;
   font-weight:bold;
