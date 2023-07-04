@@ -15,7 +15,7 @@
     background-color: #DDDDDD;
     color:#232323;}
   
-  .courses tr:hover {
+    .courses tr:focus, .courses tr:hover {
     background-color: #232323; 
     color:#DDDDDD;
     transition: 0.2s;}
@@ -47,12 +47,12 @@
     margin:3%;
   }
 
-  .card:hover .secret{
+  .card:focus .secret, .card:hover .secret{
     display:block;
     line-height:1.5em;
   }
 
-  .experience:hover{
+  .experience:focus, .experience:hover{
     background-color:#B7D1DA;
     color:#232323;
   }

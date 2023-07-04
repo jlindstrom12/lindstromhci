@@ -6,7 +6,7 @@ var year1week = {
     textposition: 'top',
     name:'Semester',
     line: {
-        color: 'rgb(219, 64, 82)'
+        color: 'rgb(61,61,61)'
     }
   };
   
@@ -16,7 +16,10 @@ var year1week = {
     mode: 'lines+text+markers',
     // text: [3.2, 3.2, 3.2],
     textposition: 'top',
-    name:'Cumulative'
+    name:'Cumulative',
+    line: {
+      color: 'rgb(120,120,120)'
+  }
   };
   
   

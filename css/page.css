@@ -16,20 +16,26 @@ h2{
 }
 
 
-#project_images{
+.project_images{
     display:flex;
     justify-content:center;
     text-align:center;
     padding:2vh;
 }
-#project_images img{
+.project_images img{
     width:100%;
     height:auto;
     margin:auto;
 }
-#project_images h2{
+.project_images h2{
     float:left;
     margin-bottom:2vh;
+}
+
+.project_caption{
+    font-style:italic;
+    font-size:80%;
+    text-align:center;
 }
 
 
