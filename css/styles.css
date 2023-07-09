@@ -57,12 +57,15 @@ h1{
     display:none;
 }
 
-/* figcaption {
+figcaption {
     color: #232323;
     font-style: italic;
-    padding: 2px;
     text-align: center;
     position: absolute;
     bottom: 0px;
     
-  } */
+  }
+
+.mobile{
+    display:none;
+}

@@ -1,0 +1,75 @@
+@media (max-width: 768px) {
+    .desktop {
+        display: none;
+    }
+
+    #content{
+        width:100%;
+    }
+
+    .mobile{
+        display:block;
+    }
+
+    #topbar{
+        box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+        z-index: 1; /* Stay on top */
+        width:100%;
+    }
+}
+    
+    /* body{
+        font-size: 100%;
+        background: #faf7f3;
+    }
+    #container{
+        width:100%;
+        margin:1em auto;
+    }
+    #top_row h1{
+        color:#2a1d1c;
+        font-size:2em;
+    }
+    #top_row h3{
+        font-size:1em;
+    }
+    #top_row nav{
+        display:none;
+    }
+    #content{
+        float: left;
+        width:100%;
+        margin:0;
+        padding:1em;
+        border-right:none;
+
+    }
+    #content h3{
+        font-size:1.25em;
+        margin:0;
+    }
+    #content img{
+        display:none;
+    }
+    #bio{
+        margin-left:0em;
+        font-size:.875em;
+    }
+    #bio a{
+        border-bottom: none;
+    }
+
+    #sidebar{
+        padding:0em;
+        font-size:.875em;
+        border:none;
+    }
+
+    #sidebar h3{
+        font-size:1.25em;
+        margin:0;
+        border:none;
+    } */
+
+}
