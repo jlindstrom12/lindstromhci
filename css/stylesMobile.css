@@ -17,18 +17,34 @@
         width:100%;
         position:sticky;
         top:0;
-    
+    }
+
+    .navbar{
+        background-color: RGBA(35,35,35,var(--bs-bg-opacity,1))!important;
     }
 
     .project{
         max-width: 100vw;
-        height: 35vh;
+        height: 32vh;
     }
 
     .carousel .carousel-item {
         height:35vh;
        
       }
+    .carousel:hover .secret, .project:hover .secret {
+        display:none;}
+
+    .carousel:hover .card-body, .project:hover .card-body {
+           padding-top: 12px;
+           padding-bottom: 12px;
+           color: #DDDDDD;
+           background-color:#232323;
+        
+        }
+        
+    
+    }
 
     
 }

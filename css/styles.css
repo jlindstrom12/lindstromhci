@@ -70,3 +70,11 @@ figcaption {
     display:none;
 }
 
+hr{
+    color:#DDDDDD;
+}
+
+#content hr{
+    color:#232323;
+}
+

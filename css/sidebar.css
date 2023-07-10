@@ -1,7 +1,7 @@
 #sidebar{
   width: 20%;
   height:100vh;
-  background-color:#4C4C4C;
+  
   margin:0;
   float:left;
   box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -11,7 +11,6 @@
   left: 0;
 }
 .text-bg-dark {
-  
   background-color: RGBA(35,35,35,var(--bs-bg-opacity,1))!important;
 }
 
