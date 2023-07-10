@@ -42,6 +42,19 @@
            background-color:#232323;
         
         }
+        .experience{
+            max-width: 100vw;
+            position: relative;
+            margin: auto;
+            overflow:hidden;
+            height: auto;
+            margin-bottom:6%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            outline:none;
+            background-color:#232323;
+            color:#DDDDDD;
+           
+          }
         
     
     }
