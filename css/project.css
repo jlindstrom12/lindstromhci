@@ -88,12 +88,10 @@
 
 
 .carousel .carousel-item {
-    height:460px;
+    height:500px;
    
   }
-
-
-  
+ 
   .carousel-item img {
       width:100%;
       height:auto;
@@ -101,7 +99,7 @@
       object-fit: cover;
       top: 0;
       left: 0;
-      max-height: 450px;
+      max-height: 100%;
   }
 
   

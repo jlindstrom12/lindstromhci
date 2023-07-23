@@ -58,6 +58,10 @@ h2{
     display:flex;
 }
 
+.centered a{
+    margin:auto;
+}
+
 .secret{
     display:none;
 }
@@ -82,5 +86,9 @@ hr{
 #content hr{
     color:#232323;
    
+}
+
+.centered img{
+    margin:2em;
 }
 
