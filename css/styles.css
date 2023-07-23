@@ -1,7 +1,7 @@
 body {
 	font-family: serif;
 	/* Set all font in the page to Helvetica with font formatting */
-	font-size: 100%; /* Generally set the font-size to 100% in the body 
+	font-size: 115%; /* Generally set the font-size to 100% in the body 
 	                    - you can then change with em in the other areas */
 	line-height: 1.7em; /* The line-height property in CSS controls the space 
 	                       between lines of text. */
@@ -125,5 +125,5 @@ hr{
     from { opacity: 0; }
     to   { opacity: 1; }
 
-
+}
 
