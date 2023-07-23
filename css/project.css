@@ -88,8 +88,12 @@
 
 
 .carousel .carousel-item {
-    height:500px;
+    height:55vh;
    
+  }
+
+  .pics .carousel-item {
+    height:44vh;
   }
  
   .carousel-item img {
