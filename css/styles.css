@@ -23,7 +23,7 @@ body {
 h1{
     color:#232323;
     /* color:#516267; */
-    font-size: 200%;
+    font-size: 160%;
     text-decoration:underline;
     margin-bottom:15px;
     font-weight:bold;
@@ -31,7 +31,7 @@ h1{
 
 h2{
     text-decoration:underline;
-    font-size:150%;
+    font-size:130%;
 }
 
 .tab { text-indent:40px }
@@ -88,6 +88,11 @@ hr{
    
 }
 
+.indent{
+    text-indent:80px;
+}
+
+
 .fade_in {
 
     -webkit-animation: fadein .5s; /* Safari, Chrome and Opera > 12.1 */
@@ -126,4 +131,32 @@ hr{
     to   { opacity: 1; }
 
 }
+
+.courses {
+    border-collapse: collapse;
+    width: 100%;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    margin-bottom:20px;
+    font-size: 100%;
+  }
+
+  .courses p{
+    font-size: 92%;
+  }
+
+  .courses th{
+    text-align:center;
+  }
+  
+  .courses td, #courses th {
+    padding:.5em 2em .5em 2em;
+  }
+  
+  .courses tr:nth-child(even){
+    background-color: #B7D1DA;
+    color: #232323;}
+  .courses tr:nth-child(odd){
+    background-color: #DDDDDD;
+    color:#232323;}
+
 

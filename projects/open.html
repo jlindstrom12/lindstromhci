@@ -12,6 +12,7 @@
     <link href="../css/styles.css" rel="stylesheet">
     <link href="../css/page.css" rel="stylesheet">
     <link href="../css/project.css" rel="stylesheet">
+    
     <link rel="stylesheet" media="Screen and (max-width:768px)" type="text/css" href="../css/stylesMobile.css"/>
   </head>
     
@@ -136,6 +137,106 @@
               Restaurant Manager: Runs the restaurant and manages the waiters<br>
               Waiters: Serves customers food and make sure the restaurant is clean and runs smoothly</p>
           </div>
+          <div class = "col-lg-12 scroll">
+            <style>
+              div.scroll {
+                width: 100%;
+                height: 500px;
+                overflow: auto;
+                text-align: justify;
+                padding: 20px;
+              }
+            </style>
+            <table class="courses">
+              <tr>
+                <th><p>As a "Role"</p></th>
+                <th><p>I want to ...</p></th>
+                <th><p>So that I can...</p></th>
+              </tr>
+              <tr>
+                <td><p>Diner</p></td>
+                <td><p>Make/Cancel a reservation </p></td>
+                <td><p>make plans
+                  accordingly</p></td>
+              </tr>
+              <tr>
+                <td><p>Diner</p></td>
+                <td><p>See the number of
+                  reservations for the past
+                  month for a specific
+                  restaurant</p></td>
+                <td><p>assess the
+                  popularity of the
+                  restaurant</p></td>
+              </tr>
+              <tr>
+                <td><p>Diner</p></td>
+                <td><p>Favorite a restaurant</p></td>
+                <td><p>save the restaurants
+                  that I want to try in the
+                  future</p></td>
+              </tr>
+              <tr>
+                <td><p>Diner</p></td>
+                <td><p>Search availabilities based on
+                  date & time</p></td>
+                <td><p>make plans
+                  </p></td>
+              </tr>
+              
+              <tr>
+                <td><p>Waiter</p></td>
+                <td><p>See the list of guest
+                  reservations for a given day</p></td>
+                <td><p>arrange for supplies
+                  and tables accordingly</p></td>
+              </tr>
+              <tr>
+                <td><p>Waiter</p></td>
+                <td><p>Get the contact information
+                  of customers with
+                  reservations for a particular
+                  day</p></td>
+                <td><p>contact the customer
+                  in regards to the
+                  reservation</p></td>
+              </tr>
+              <tr>
+                <td><p>Manager</p></td>
+                <td><p>Add menu items </p></td>
+                <td><p>appeal customers with
+                  my restaurant’s dishes</p></td>
+              </tr>
+              <tr>
+                <td><p>Manager</p></td>
+                <td><p>See customers who make
+                  reservations frequently</p></td>
+                <td><p>provide special offers to
+                  increase customer loyalty</p></td>
+              </tr>
+              <tr>
+                <td><p>Manager</p></td>
+                <td><p>Provide summary statistics
+                  for which days of the week
+                  were most popular</p></td>
+                <td><p>arrange human and
+                  material resources more
+                  efficiently</p></td>
+              </tr>
+              <tr>
+                <td><p>Manager</p></td>
+                <td><p>Offer a coupon for
+                  discounted food</p></td>
+                <td><p>attract more
+                  customers</p></td>
+              </tr>
+              
+              
+              
+             
+             
+            </table>
+          </div>
         </div>
 
         <div class = "row">
@@ -144,16 +245,69 @@
             <h2>Conceptual Model</h2>
             <img src = "../Images/open/ERD.png" alt="Conceptual Model">
             <p class = "project_caption">Fig 1. Conceptual Model for Open Table database project</p>
+            
           </div>
           <div class="col-lg-6 project_images">
             <h2>Relational Model</h2>
             <img src = "../Images/open/relational.png" alt="Relational Model">
             <p class = "project_caption">Fig 2. Relational Model, note: bolded attributes are primary keys, underlined attributes are foregin keys. Some attributes are both PKs and FKs.  </p>
+            <p class ="tab" style = "text-align:left;"> For the relational model we designed above all of our entities are in 3NF meaning no repeats attributes, no partial dependencies, or
+              transitive dependencies. We wanted to eliminate all redunency and inconsistant dependencies when designing our models.
+            </p>
           </div>
         </div>
-  
-      
-      
+        <div class = "row">
+          <div class = "col-lg-12">
+            <h2>Assumptions & Clarifications</h2>
+            <ul>
+              <li>
+                We did not use a composite primary key (id, restaurant_id) for Tables table since we want
+                to use the attribute id as a serial type, which will be enough to uniquely identify each
+                instance. We also want to avoid the complication when a serial integer is involved in a
+                composite PK. The con is that id would become very large if this system were to scale.
+              </li>
+              <li>
+                One user can only make reservation for one table at one restaurant at one time point
+              </li>
+              <li>
+                A party can only reserve a table if their n_guests is lower than the max capacity of said
+                table
+              </li>
+              <li>
+                One restaurant cannot have two menu items with the same name
+              </li>
+              <li>
+                Tables are not being moved and combined around a restaurant. There is a set number of
+                tables for each restaurant
+              </li>
+              <li>
+                One diner cannot make more than one reservation for the same time/date
+              </li>
+              <li>
+                Reservations can be made on the hour and the table opens up exactly 1 hour after the
+                reservation
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class ="row">
+          <h2>Similar Projects</h2>
+          <div class="col-lg-6">
+            <div class = "card project">
+              <a href="../projects/cafe.html">
+                <img src="../Images/covers/cafe23Cover.png"  alt="Image of Coffee"/>
+                <div class="card-body">
+                    <h5 class="card-title">App Design and Development: Cafe 23</h5>
+                    <p class="card-text secret">An Employee Management App for a cafe built with ruby on rails<br><strong>Skills:</strong> Ruby on Rails, MVC, Databases, HTML, CSS, Javascript </p>
+                    <!-- <a href="#" class="btn btn-primary secret">Go somewhere</a> -->
+                </div>
+              </a>
+            </div>
+          </div>
+
+          
+        </div>
 
 
 

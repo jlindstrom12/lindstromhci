@@ -1,26 +1,10 @@
-.courses {
-    border-collapse: collapse;
-    width: 100%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-bottom:20px;
-  }
+
   
-  .courses td, #courses th {
-    padding:.5em 2em .5em 2em;
-  }
-  
-  .courses tr:nth-child(even){
-    background-color: #B7D1DA;
-    color: #232323;}
-  .courses tr:nth-child(odd){
-    background-color: #DDDDDD;
-    color:#232323;}
-  
-    .courses tr:focus, .courses tr:hover {
+    /* .courses tr:focus, .courses tr:hover {
     background-color: #232323; 
     color:#DDDDDD;
     transition: 0.2s;}
-  
+   */
     #mydays{
         margin:2%;
     }
