@@ -126,42 +126,118 @@
 
         <div class ="row">
           <h2>User Stories and ERD</h2>
-          <div class="col-lg-6" >
-           <p class = "tab">Before coding anything we first had to understand the database and our users. Our three primary users are Admins, Managers, and Employees. All of which have different needs and wants. I considered all users and started off by creating a list of A, B, and C level needs for the app. 
-            Before we started to code first we had to understand the needs of our users. Our primary users are Managers, Employees, and Admins. All of the needs are too long to be listed here but they were detailed in this link: . For phase 1 we went through this document and considered all of the needs of our users by A level, B level, and C level. A level user scenarios are nessessary for the application to work, B level are things that we want to have, C level is things we would like to have but aren't nessessary. Some examples include:
-            </p>
+          <div class="col-lg-8" >
+           <p class = "tab">
+            Prior to commencing the coding process, we conducted a comprehensive analysis of our users' requirements. Our application caters to three primary user categories: Managers, Employees, and Admins, each with distinct needs and preferences. To identify these needs, we carefully examined a narrative document, categorizing them into A, B, and C levels of importance. A-level user scenarios were deemed essential for the application's core functionality, while B-level encompassed desirable features, and C-level represented optional enhancements.
+            For instance: </p>
+          <ul>
+            <li>As an Admin, I require the ability to add employees, stores, and shifts to the system.</li>
+            <li>As an Employee, I need to be able to conveniently clock in and clock out through the app.</li>
+            <li>As a Manager, I need to access a feature that allows me to generate payroll for my store.</li>
+
+          </ul>
+
+          <p class = "tab">By understanding these user needs at different levels of priority, we ensured that our development efforts were focused on delivering an application that addresses the most critical requirements first while offering additional features for an enhanced user experience.</p>
+
+
           </div>
           
-          <div class="col-lg-6">
-            
+          <div class="col-lg-4 project_images">
+            <img src = "../Images/cafe/erd.png" alt = "Entity Relationship Diagram for Cafe 23">
+            <p class = "project_caption">Fig 1. Entity Relationship Diagram for Cafe 23</p>
+
           </div>
         </div>
 
         <div class ="row">
           <h2>Models and Controllers</h2>
           <div class="col-lg-6" >
-           <p class = "tab"> After gaining an understanding for all the function I intend to implement and the relationship between the entities in the database I could start coding. I began creating models for assignments, employees, and stores ensuring that I tested everything to make sure it worked as intended. I then finished my models creating shifts, pay grade, pay grade rates, jobs, and shift jobs. 
-            Once my models all had 100% test coverage I started on the controllers. The controllers would allow me to connect my models to the views I intended on making later. I created models for the entities that I wanted to create views for: Employees, shifts, stores, jobs, and xxx.
+           <p class = "tab"> After thoroughly understanding the functions to be implemented for my users and establishing the relationships between entities in the database, I proceeded with the coding phase. I first created models for all the entities outlined in my Entity-Relationship Diagram (ERD). Prior to starting the actual coding, I diligently crafted tests, covering various edge cases to ensure robustness and accuracy.
+            </p>
+            <p class = "tab">Embracing the principles of test-driven development, I wrote the tests before coding the models. This approach guaranteed that my models were designed to pass all the tests, minimizing potential errors and ensuring a solid foundation for the application.
+            </p>
+            <p class = "tab">Upon achieving 100% test coverage for my models, I moved on to develop the controllers. These controllers acted as the bridge between my models and the future views that I planned to create. I implemented controllers for key entities, such as employees, shifts, assignments, stores, jobs, and pay grades, paving the way for the seamless integration of data and functionality with the views in the later stages of development.
             </p>
           </div>
           
-          <div class="col-lg-6">
-           
+          <div class="col-lg-6 project_images">
+            <img src = "../Images/cafe/Model.png" alt = "Models Views Controllers">
+            <p class = "project_caption">Fig 2. MVC System</p>
           </div>
         </div>
 
         <div class ="row">
           <h2>Views</h2>
-          <div class="col-lg-6" >
+          <div class="col-lg-12" >
            <p class = "tab"> 
-           
+            For views, I undertook two main actions. Initially, I developed new, show, and index views for key models such as employees, shifts, assignments, stores, jobs, and pay grades, ensuring comprehensive coverage of essential functionalities. Subsequently, I utilized these views to fully develop the primary app, tailoring it to accommodate 8 distinct user scenarios as outlined in the project requirements.
+
             </p>
+            <p class = "tab"> 
+              Moreover, I capitalized on the capabilities of Figma, a collaborative design tool, to craft two specialized dashboards—one tailored for Managers and another for Admins. Each dashboard was carefully tailored to meet the unique needs of its intended user group, displaying relevant and important information on their respective home screens, thus enhancing their overall user experience.
+              </p>
           </div>
           
-          <div class="col-lg-6">
+          <!-- <div class="col-lg-6">
            
+          </div> -->
+        </div>
+
+
+        <div class ="row">
+          <h2>App Pictures</h2>
+          <div class="col-lg-6 project_images">
+            <img src = "../Images/cafe/ss1.png" alt = "screen 1 for cafe 23">
+            <p class = "project_caption">Fig 3. Home Screen of Cafe 23</p>
+          </div>
+          <div class="col-lg-6 project_images">
+            <img src = "../Images/cafe/ss2.png" alt = "Screen 2 for cafe 23">
+            <p class = "project_caption">Fig 4. Employees Page for Cafe 23</p>
           </div>
         </div>
+        <div class = "row">
+          <div class = "col-lg-3"></div>
+          <div class="col-lg-6 project_images">
+            <img src = "../Images/cafe/ss3.png" alt = "Screen 3 for cafe 23">
+            <p class = "project_caption">Fig 5. Store Payroll for Cafe 23</p>
+          </div>
+        </div>
+
+        <div class ="row">
+          <h2>Dashboards</h2>
+          <div class="col-lg-6 project_images">
+            <img src = "../Images/cafe/Dashboard1.png" alt = "Dashboard Designed in Figma for Managers">
+            <p class = "project_caption">Fig 6. Dashboard Designed in Figma for Managers</p>
+          </div>
+          <div class="col-lg-6 project_images">
+            <img src = "../Images/cafe/Dashboard2.png" alt = "Dashboard Designed in Figma for Admins">
+            <p class = "project_caption">Fig 7. Dashboard Designed in Figma for Admins</p>
+          </div>
+        </div>
+
+        <div class ="row">
+          <p class = "tab">
+            When designing these dashboard I had different thoughts in mind for Managers and Admins. For Managers I wanted to focus in on their store. 
+            This is why I highlighted important elements like the number of employees and info important to their store like shift coverage and payroll completion. I utilized 
+            red to go with the inital color scheme to draw attention to the most urgent areas. 
+          </p>
+          <p class = "tab">
+            For the Admin dashboard I took a different approach. I took it a little more broad focusing on the buisness as a whole
+            as opposed to individual employees. To do this, I focused on the stores and the managers. Through the Admin dashboards they can see
+            important elements like yearly store revenue, Store averages, and the employee statistics for each store.
+          </p>
+        </div>
+
+        <div class = "row">
+          <h2>Things I learned</h2>
+          <div class = "col-lg-12">
+           <p class = "tab"> Over the course of this project I learned about ruby on rails and using MVC for creating apps. I also learned more about concepts in web design such as reduction of cognitive load and the gulf of expectation and the gulf of evaluation. I intend on building upon the principles I learned in this class to further my understanding of app and web development.
+          </p>
+          </div>
+        </div>
+          
+       
+       
             
 
       
