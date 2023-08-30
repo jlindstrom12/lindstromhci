@@ -1,5 +1,6 @@
 body {
-	font-family: serif;
+	/* font-family: serif; */
+    font-family: 'firme-thin';
 	/* Set all font in the page to Helvetica with font formatting */
 	font-size: 115%; /* Generally set the font-size to 100% in the body 
 	                    - you can then change with em in the other areas */
@@ -13,37 +14,175 @@ body {
     background-size: cover;
 
 }   
+
 #content{
-    width:80%;
+    width:100%;
     height:100%;
-    float:right;
-    padding: 3%;
+    margin-top: 6%;
+    padding:3%;
+    padding-left: 15%;
+    padding-right: 15%;
+    
+    /* float:right; */
+    /* padding: 3%; */
+}
+
+.secret{
+    display:none;
 }
 
 h1{
-    color:#232323;
-    /* color:#516267; */
-    font-size: 160%;
+    color:#000;
    
+    font-size: 6vh;
+    text-decoration: none;
     margin-bottom:15px;
     font-weight:bold;
+    font-family:serif
+    
+       
+  
 }
 
-h2{
+a{
+    text-decoration: none;
+}
+
+.fade_in {
+
+    -webkit-animation: fadein .5s; 
+       -moz-animation: fadein .5s; 
+        -ms-animation: fadein .5s; 
+         -o-animation: fadein .5s; 
+            animation: fadein .5s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+
+}
+
+.but a:hover{
+    background-color:#fff;
+    color:#000;
+    outline:auto;
+}
+
+footer{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:5%;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    text-align:center;
+  }
+  
+  .social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .social-icon-link {
+    font-size: 24px;
+    text-decoration: none;
+  }
+
+  .gradient{
+
+    
+    font-size: 20px;
+    background: linear-gradient(
+        to right, #1ccd28, rgb(2, 163, 139),
+         #2337cf, #7144ee);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-family: Stencil Std, fantasy
+}
+.centered{
+    justify-content:center; 
+    text-align:center; 
+    display:flex;
+}
+
+
+.navbar-toggler {
+    
+    background-color: white;
+}
+
+.courses {
+    border-collapse: collapse;
+    width: 100%;
+    
+    margin-bottom:20px;
+    font-size: 100%;
+    margin-bottom:12px;
+  }
+
+  .courses p{
+    font-size: 92%;
+  }
+
+  .courses th{
+    text-align:center;
+  }
+  
+  .courses td, #courses th {
+    padding:.5em 2em .5em 2em;
+  }
+  
+  .courses tr:nth-child(even){
+    background-color: #ffff;
+    color: #232323;}
+  .courses tr:nth-child(odd){
+    background-color: #DDDDDD;
+    color:#232323;}
+
+    .tab { text-indent:40px }
+
+ 
+/* h2{
     
     font-weight:bold;
     font-size:130%;
     font-family:Georgia, 'Times New Roman', Times, serif
 }
 
-.tab { text-indent:40px }
 
 
 
-.but a:hover{
-    background-color:#B7D1DA;
-    color:#232323;
-}
+
+
 
 .nav-pills{
     color:#232323;
@@ -64,9 +203,7 @@ h2{
     margin:auto;
 }
 
-.secret{
-    display:none;
-}
+
 
 figcaption {
     color: #232323;
@@ -110,10 +247,10 @@ hr{
 
 .fade_in {
 
-    -webkit-animation: fadein .5s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein .5s; /* Firefox < 16 */
-        -ms-animation: fadein .5s; /* Internet Explorer */
-         -o-animation: fadein .5s; /* Opera < 12.1 */
+    -webkit-animation: fadein .5s; 
+       -moz-animation: fadein .5s; 
+        -ms-animation: fadein .5s; 
+         -o-animation: fadein .5s; 
             animation: fadein .5s;
 }
 
@@ -122,25 +259,25 @@ hr{
     to   { opacity: 1; }
 }
 
-/* Firefox < 16 */
+
 @-moz-keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
 
-/* Safari, Chrome and Opera > 12.1 */
+
 @-webkit-keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
 
-/* Internet Explorer */
+
 @-ms-keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
 
-/* Opera < 12.1 */
+
 @-o-keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
@@ -150,7 +287,7 @@ hr{
 .courses {
     border-collapse: collapse;
     width: 100%;
-    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    
     margin-bottom:20px;
     font-size: 100%;
     margin-bottom:12px;
@@ -175,4 +312,4 @@ hr{
     background-color: #DDDDDD;
     color:#232323;}
 
-
+ */

@@ -1,4 +1,17 @@
+
 @media (max-width: 768px) {
+    .project{
+        max-width: 70vw;
+        width:100%;
+        position: relative;
+        margin: 3%;
+        overflow:hidden;
+        height: 40vh;
+        margin-top:0;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        outline:none;
+    }
+/*
     .desktop {
         display: none;
     }
@@ -13,7 +26,7 @@
 
     #topbar{
         box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        z-index: 3; /* Stay on top */
+        z-index: 3; 
         width:100%;
         position:sticky;
         top:0;
@@ -115,4 +128,3 @@
         border:none;
     } */
 
-}

@@ -1,129 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Generative Art with p5.js</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UX Design Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        .interest {
+            padding: 2rem;
+            text-align: center;
+        }
+        .interest img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
-  <script>
-    let f, f1;
-    let lines = [];
-    let lines1 = [];
-    let num = 80000;
-    let num1 = 20000;
-    let back;
-    let vmin = 3;
-    let vmax = 6;
-    let fmin = 0.5;
-    let fmax = 5;
-
-    function setup() {
-      createCanvas(1920, 1080);
-      f = new Field(4);
-      f1 = new Field(2);
-      back = loadImage("Images/art/1.jpg", img => {
-        img.loadPixels();
-
-        for (let i = 0; i < num; i++) {
-          let pos = createVector(random(width), random(height));
-          let a = new Line(pos);
-          a.col = img.get(int(pos.x), int(pos.y));
-          lines.push(a);
-        }
-
-        for (let i = 0; i < num1; i++) {
-          let pos1 = createVector(random(width), random(height));
-          let a1 = new Line(pos1);
-          a1.col = color(200, brightness(img.get(int(pos1.x), int(pos1.y))));
-          lines1.push(a1);
-        }
-      });
-      background(0);
-    }
-
-    function draw() {
-      noStroke();
-      fill(0, 5);
-      rect(0, 0, width, height);
-
-      for (let b of lines1) {
-        b.proceed(f1, f1);
-      }
-
-      for (let b of lines) {
-        b.proceed(f1, f);
-      }
-
-      for (let b of lines1) {
-        b.proceed(f1, f1);
-      }
-    }
-
-    class Field {
-      constructor(scl) {
-        this.cols = floor(width / scl);
-        this.rows = floor(height / scl);
-        this.flowfield = new Array(this.cols * this.rows);
-        this.init();
-      }
-
-      init() {
-        let xoff = 0;
-        for (let i = 0; i < this.cols; i++) {
-          let yoff = 0;
-          for (let j = 0; j < this.rows; j++) {
-            let index = i + j * this.cols;
-            let angle = noise(xoff, yoff) * TWO_PI * 4;
-            let v = p5.Vector.fromAngle(angle);
-            v.setMag(1);
-            this.flowfield[index] = v;
-            yoff += 0.1;
-          }
-          xoff += 0.1;
-        }
-      }
-
-      lookup(lookup) {
-        let column = floor(constrain(lookup.x / width * this.cols, 0, this.cols - 1));
-        let row = floor(constrain(lookup.y / height * this.rows, 0, this.rows - 1));
-        let index = column + row * this.cols;
-        return this.flowfield[index].copy();
-      }
-    }
-
-    class Line {
-      constructor(pos) {
-        this.pos = pos.copy();
-        this.prevPos = this.pos.copy();
-        this.vel = createVector();
-        this.col = color(255);
-      }
-
-      proceed(f, f1) {
-        this.vel.add(f.lookup(this.pos));
-        this.vel.add(f1.lookup(this.pos).mult(-0.3));
-        this.vel.limit(map(mouseX, 0, width, vmin, vmax));
-        this.prevPos = this.pos.copy();
-        this.pos.add(this.vel);
-        this.display();
-        this.update();
-      }
-
-      update() {
-        if (this.pos.x > width) this.pos.x = 0;
-        if (this.pos.x < 0) this.pos.x = width;
-        if (this.pos.y > height) this.pos.y = 0;
-        if (this.pos.y < 0) this.pos.y = height;
-      }
-
-      display() {
-        stroke(this.col);
-        strokeWeight(1);
-        line(this.prevPos.x, this.prevPos.y, this.pos.x, this.pos.y);
-      }
-    }
-  </script>
+    <header>
+        <h1>My UX Design Portfolio</h1>
+        <p>Showcasing Four Main Interests</p>
+    </header>
+    <div class="interest">
+        <h2>Project 1: User Research</h2>
+        <img src="project1.jpg" alt="User Research Project">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non arcu non libero lacinia cursus.</p>
+        <a href="project1-details.html">Learn More</a>
+    </div>
+    <div class="interest">
+        <h2>Project 2: Interaction Design</h2>
+        <img src="project2.jpg" alt="Interaction Design Project">
+        <p>Sed sit amet libero in libero finibus tristique vel ut odio. Curabitur eget odio vitae purus laoreet consectetur.</p>
+        <a href="project2-details.html">Learn More</a>
+    </div>
+    <div class="interest">
+        <h2>Project 3: Usability Testing</h2>
+        <img src="project3.jpg" alt="Usability Testing Project">
+        <p>Vestibulum nec ante a arcu imperdiet dignissim. Suspendisse volutpat magna sit amet nibh vulputate aliquet.</p>
+        <a href="project3-details.html">Learn More</a>
+    </div>
+    <div class="interest">
+        <h2>Project 4: Information Architecture</h2>
+        <img src="project4.jpg" alt="Information Architecture Project">
+        <p>Quisque maximus arcu id tortor pellentesque, non bibendum tortor congue. Ut malesuada purus nec ante varius lacinia.</p>
+        <a href="project4-details.html">Learn More</a>
+    </div>
 </body>
 </html>

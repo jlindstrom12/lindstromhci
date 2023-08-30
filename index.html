@@ -16,89 +16,84 @@
     
     <link rel="stylesheet" media="Screen and (max-width:768px)" type="text/css" href="css/stylesMobile.css"/>
      
- 
- 
-  <style>
-    body, html {
-      margin: 0;
-      overflow: hidden;
-    }
-    canvas {
-      display: block;
-      background-color: #232323; 
-      position: absolute; /* Position the canvas absolutely within the body */
-      top: 0;
-      left: 0;
-      z-index: -1; /* Place the canvas behind other elements */
-    }
-    .button-container {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-    
-  </style>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
-</head>
-<body>
-    <script>
-    let n = 800;
-    let ps = [];
-    let squareSize = 800; // Size of the square in the middle
-    
-    function setup() {
-      createCanvas(windowWidth, windowHeight);
-     
-      for (let i = 0; i < n; i++) {
-        ps.push({ vector: createVector(random(width), random(height)), timestamp: millis() });
-      }
-      colorMode(RGB, 255);
-    }
-    
-    function draw() {
-      fill(0, 4);
-      noStroke();
-      rect(0, 0, width, height);
-      let f1 = 0.015 * frameCount;
-      let f2 = 0.01 * frameCount;
-      for (let i = 0; i < n; i++) {
-        let p = ps[i].vector;
-        let timestamp = ps[i].timestamp;
-        let theta = noise(0.003 * p.x, 0.003 * p.y) * 4 * PI;
-        let a = createVector(cos(theta), sin(theta));
-        let b = createVector(cos(f1), cos(f2));
-        let v = p5.Vector.lerp(a, b, 0.4);
-        p.add(v);
-        if (random(1.0) < 0.005 || p.x < 0 || p.x > width || p.y < 0 || p.y > height) {
-          ps[i] = { vector: createVector(random(width), random(height)), timestamp: millis() };
+      <style>
+        body, html {
+          margin: 0;
+          overflow: hidden;
         }
-        let mag = v.mag();
-       
+        canvas {
+          display: block;
+          background-color: #ffffff; /* White background */
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: -1;
+        }
+        .button-container {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      </style>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    </head>
+    <body class = "fade_in">
+      <script>
+        let n = 800;
+        let ps = [];
+        let squareSize = 800;
     
-        // Calculate opacity based on distance from square center
-        let distanceToCenter = dist(p.x, p.y, width / 2, height / 2);
-        let opacity = map(distanceToCenter, 0, squareSize / 2, 255, 0);
-    
-        // Calculate elapsed time since line was drawn
-       
-        stroke(183, 209, 218, opacity); // Apply opacity to stroke
+        function setup() {
+          createCanvas(windowWidth, windowHeight);
+         
+          for (let i = 0; i < n; i++) {
+            ps.push({ vector: createVector(random(width), random(height)), timestamp: millis() });
+          }
+          colorMode(HSB, 360, 100, 100); // Use HSB color mode for colorful visuals
+          background(255); // Set initial white background
+        }
         
-        point(p.x, p.y);
-      }
+        function draw() {
+          let f1 = 0.015 * frameCount;
+          let f2 = 0.01 * frameCount;
+          for (let i = 0; i < n; i++) {
+            let p = ps[i].vector;
+            let timestamp = ps[i].timestamp;
+            let theta = noise(0.003 * p.x, 0.003 * p.y) * 4 * PI;
+            let a = createVector(cos(theta), sin(theta));
+            let b = createVector(cos(f1), cos(f2));
+            let v = p5.Vector.lerp(a, b, 0.4);
+            p.add(v);
+            if (random(1.0) < 0.005 || p.x < 0 || p.x > width || p.y < 0 || p.y > height) {
+              ps[i] = { vector: createVector(random(width), random(height)), timestamp: millis() };
+            }
+            let mag = v.mag();
+           
+            let distanceToCenter = dist(p.x, p.y, width / 2, height / 2);
+            let opacity = map(distanceToCenter, 0, squareSize / 2, 255, 0);
+            
+            // Generate a dynamic hue based on position and time
+            let hue = map(p.x, 0, width, 0, 360);
+            
+            stroke(hue, 100, 100, opacity); // Apply hue and opacity to stroke
+            strokeWeight(2); // Set stroke weight
+            
+            point(p.x, p.y);
+          }
+        }
+      </script>
+   
     
-      // Draw centered header with dynamically adjusting size
-     
-    }
-</script>    
+    
    <div class = "desktop" style = "width:100%; height:100%; margin:auto;">
    <div class="desktop d-flex d-sm-flex justify-content-center align-items-center justify-content-sm-center align-items-sm-center grainy-gradient-intro" style="height: 100vh;width: 100vw;">
     <div class = "grainy-gradient-intro name">
     <div style="display: inline-block;letter-spacing: 8px;">
-      <h1 style="text-align: center;color: #ffffff;font-size: 5vw; text-decoration:none;">Jonathan</h1>
-      <h1 style="text-align: center;color: #ffffff;font-size: 5vw; text-decoration:none;">Lindstrom</h1>
+      <h1 style="font-family:Stencil Std, fantasy; text-align: center;color: #000;font-size: 5vw; text-decoration:none;">Jonathan</h1>
+      <h1 style="font-family:Stencil Std, fantasy; text-align: center;color: #000;font-size: 5vw; text-decoration:none;">Lindstrom</h1>
    
-      <h2 style="text-align: center;color: #ffffff; font-size: 2vw; text-decoration:none;">Design . Programming . Diving</h2>
+      <h2 style=" font-family:Stencil Std, fantasy; text-align: center;color: #000; font-size: 2vw; text-decoration:none;">Design . Programming . Diving</h2>
         
       <div width = "100%">
         <div class="btn-group but" role="group" style=" background-color: #232323; left: 30%; width: 40%; margin-top: 20px;"><a class="btn btn-outline-light text-uppercase" role="button" href="about.html">Dive In</a></div>  
@@ -113,10 +108,10 @@
     <div class="desktop d-flex d-sm-flex justify-content-center align-items-center justify-content-sm-center align-items-sm-center grainy-gradient-intro" style="height: 100vh;width: 100vw;">
      <div class = "grainy-gradient-intro name">
      <div style="display: inline-block;letter-spacing: 8px;">
-       <h1 style="text-align: center;color: #ffffff;font-size: 7vw; text-decoration:none;">Jonathan</h1>
-       <h1 style="text-align: center;color: #ffffff;font-size: 7vw; text-decoration:none;">Lindstrom</h1>
+       <h1 style="font-family:Stencil Std, fantasy; text-align: center;color: #000;font-size: 7vw; text-decoration:none;">Jonathan</h1>
+       <h1 style="font-family:Stencil Std, fantasy; text-align: center;color: #000;font-size: 7vw; text-decoration:none;">Lindstrom</h1>
     
-       <h2 style="text-align: center;color: #ffffff; font-size: 3vw; text-decoration:none;">Design . Programming . Diving</h2>
+       <h2 style=" font-family:Stencil Std, fantasy; text-align: center;color: #ffffff; font-size: 3vw; text-decoration:none;">Design . Programming . Diving</h2>
          
        <div width = "100%">
          <div class="btn-group but" role="group" style=" background-color: #232323; left: 30%; width: 40%; margin-top: 20px;"><a class="btn btn-outline-light text-uppercase" role="button" href="about.html">Dive In</a></div>  

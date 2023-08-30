@@ -14,11 +14,12 @@
 
 .project{
     max-width: 35vw;
+    width:100%;
     position: relative;
     margin: 3%;
     overflow:hidden;
-    height: 35vh;
-    margin-bottom:6%;
+    height: 40vh;
+    margin-top:0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     outline:none;
 }
@@ -35,8 +36,8 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-    background-color: #B7D1DA;
-    color:#232323;
+    background-color: #ECECEC;
+    color:#000;
 
 }
 
@@ -74,8 +75,8 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-    background-color: #232323;
-    color:#DDDDDD;
+    background-color: #ECECEC;
+    color:#000;
     transition: .3s;
 }
 

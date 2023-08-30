@@ -1,0 +1,104 @@
+
+
+  #about_me{
+    height:90vh;
+    width:100%;
+   
+  }
+  
+  .profile-photo img {
+    width:80%;
+    box-shadow: 20px 20px 0 black;
+  }
+
+  .profile-photo {
+   justify-content:center;
+   text-align:center;
+   display:flex;
+  }
+
+  
+  .about-section {
+    max-width: 800px;
+    margin: 0 auto;
+   
+  }
+  
+  
+  .about-heading {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .about-content {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  
+  
+  
+
+  .scroll-arrow {
+  
+    position:block;
+      cursor: pointer;
+      font-size: 32px;
+      animation: blink 5s infinite;
+      transition: transform 0.2s, color 0.2s; /
+    }
+
+    .scroll-arrow:hover {
+        transform: translateY(-3px); /* Add lift effect on hover */
+        color: #007bff; /* Change color on hover */
+        animation: none;
+      }
+    
+    @keyframes blink {
+      0%, 100% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0;
+      }
+    }
+
+    .interest{
+      width:100%;
+      justify-content:center;
+      text-align:center;
+     
+    }
+
+    .interest img{
+      width:20vw;
+      height:20vw;
+      border-radius:50%;
+      margin-bottom:2%;
+     
+    }
+
+
+    .interest_caption h2{
+      justify-content:center;
+    text-align:center;
+    margin-top:2%;
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      background: linear-gradient(
+        to right, #1ccd28, rgb(2, 163, 139),
+         #2337cf, #7144ee);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-family: Stencil Std, fantasy;
+    }
+
+    .interest_caption p{
+      text-align:left;
+    }
+
+   

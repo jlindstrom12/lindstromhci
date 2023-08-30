@@ -8,271 +8,199 @@
     <link rel="shortcut icon" type="image/png" href="Images/icon.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    <link href="css/sidebar.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <link href="css/topbar.css" rel="stylesheet">
     <link href="css/about.css" rel="stylesheet">
     <link href="css/project.css" rel="stylesheet">
-    <link rel="stylesheet" media="Screen and (max-width:768px)" type="text/css" href="css/stylesMobile.css"/>
-   
-  </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <!-- <link href="css/sidebar.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
     
-<body>
-  <!-- Topbar for mobile version -->
-  <div class = "mobile" id = "topbar">
-    <nav class="navbar navbar-dark bg-dark">
+    <link href="css/project.css" rel="stylesheet"> -->
+    <link rel="stylesheet" media="Screen and (max-width:768px)" type="text/css" href="css/stylesMobile.css"/>
+  </head>
+  
+    <nav class="navbar navbar-expand-md navbar-light bg-light header" aria-label="Fourth navbar example">
       <div class="container-fluid">
-        <img src="./Images/logo2.png" style = "height:45px; width:auto;" alt="My CMU Swim and Dive Photos"/>
-        <a class="navbar-brand" href="index.html">Jonathan Lindstrom</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbars" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="index.html"><h1>Jonathan Lindstrom</h1></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-  
-        <div class="collapse navbar-collapse" id="navbars">
-          <hr>
-          <ul class="navbar-nav me-auto mb-2">
+        <div style = "float:right">
+        <div class="collapse navbar-collapse" id="navbarsExample04">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="about.html">About Me</a>
+              <a class="nav-link active" id = "scrollTop" aria-current="page" href="about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="project.html">Portfolio</a>
+              <a class="nav-link" id = "scrollPortfolio" href="portfolio.html">Portfolio</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="experience.html">Experience</a>
-            </li>
+           
+           
           </ul>
-          
+        </div>
+         
         </div>
       </div>
     </nav>
-  </div>
-  <!-- End of Topbar for mobile -->
-  <div class = "desktop">
-    <div class="d-flex flex-column  p-3 text-bg-dark" id="sidebar">
-        <a href="index.html" class=" nav_side d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none">
-          <img src='./Images/logo2.png' style = "height:45px; width:auto;" alt="My CMU Swim and Dive Photos"/>
-          <span class="fs-5">&nbsp;&nbsp;Jonathan Lindstrom</span>
-        </a>
-        <hr>
-        <ul class="nav nav-pills flex-column mb-auto">
-          <li class="nav-item">
-            <a href="about.html" class="nav-link active nav_side" aria-current="page">
-              <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#home"/></svg>
-              About Me
-            </a>
-          </li>
+  
+  <body class = "fade_in">
+    <div id = "content">
+   
+    <!-- <img src="Images/Me/Me.jpg" alt="Profile Photo" class="profile-photo"> -->
+    <section id="section1">
+    <div class = "row">
+      <div class = "col-lg-6">
+        <div class="about-section">
+          <h2 class="about-heading gradient">Hello, I'm Jonathan Lindstrom</h2>
+          <p class="about-content tab">I'm a passionate UX designer dedicated to creating meaningful and user-centered experiences. I am currently a junior at Carnegie Mellon studying Information Systems and Human Computer Interactions. With this background I'm driven by a strong desire to solve complex problems through innovative design solutions.</p>
           
-          <li>
-            <a href="project.html" class="nav-link nav_side">
-              <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
-              Portfolio
-            </a>
-          </li>
-          <li>
-            <a href="experience.html" class="nav-link nav_side">
-              <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#table"/></svg>
-              Experience
-            </a>
-          </li>
-        </ul>
-        <hr>
-        <div>
+          <p class="about-content tab">My approach involves a deep understanding of user needs, extensive research, and collaborative teamwork. I believe that every design decision should be purposeful and rooted in empathy, leading to products that are both intuitive and delightful to use.</p>
           
-          <div tabindex="0" class="btn-group side"  role="group" onclick="window.open('Docs/resume.pdf');" ><a class="btn text-uppercase" role="button">Resume</a></div>
-          <div tabindex="0" class="btn-group side"  role="group" onclick="window.open('Docs/transcript.pdf');" ><a class="btn text-uppercase" role="button">Transcript</a></div>
+          <ul class="social-icons">
+            <li><a href="www.linkedin.com/in/jonathan-lindstrom/" class="social-icon-link" style = "color: #1ccd28;" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://www.twitter.com/yourusername" class="social-icon-link" style = "color: rgb(2, 163, 139);" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.twitter.com/yourusername" class="social-icon-link" style = "color: #236ecf;" target="_blank"><i class="fab fa-github"></i></a></li>
+            <!-- <li><a href="https://www.twitter.com/yourusername" class="social-icon-link" target="_blank"><i class="fa-regular fa-envelope"></i></a></li> -->
+           
+            
+           
+          </ul>
         </div>
-        <hr>
-        
-        <!-- <a href="tel:2025036636">202-503-6636</a>
-        <a href="mailto:lindstromhci@gmail.com">lindstromhci@gmail.com</a> -->
-        <div id = "row" class = "centered" >
-        <a href="mailto:lindstromhci@gmail.com"><img src="Images/socials/mail.png" style = "height:50px; width:50px; margin:2%;" alt="Email Icon"></a>
-        <a href="https://www.linkedin.com/in/jonathan-lindstrom" target = "_Blank"><img src="Images/socials/linkedin (1).png" style = "height:50px; width:50px; margin:2%;" alt="Facebook Icon"></a>
-        <a href="https://www.instagram.com/jonathan_lindstrom14/" target="_Blank"><img src="Images/socials/instagram.png" style = "height:50px; width:50px; margin:2%;" alt="Instagram Logo"></a> 
-        <a href="https://github.com/jlindstrom12" target="_Blank"><img src="Images/socials/github.png" style = "height:50px; width:50px; margin:2%;" alt="Instagram Logo"></a> <br/>
       </div>
-        <hr>
+      <div class = "col-lg-6 profile-photo">
+        <div class = "image-container">
+          <img src="Images/Me/Me.jpg" alt="Profile Photo">
+        </div>
       </div>
     </div>
-      <!-- End Side Bar -->
-      <div id = "content" class = "fade_in" >
-
-        <div class="row">
-          <h1>About Me</h1>
-          <div class="col-lg-6">
-            <p class = "tab">
-              Hello, I'm Jonathan Lindstrom, a rising junior at Carnegie Mellon University. I'm pursuing a double major in Information Systems and Human Computer Interactions, with a minor in Intelligent Environments. I have a passion for designing front-end interfaces, like this website, and I'm fascinated by the way people learn from and interact with with technology. 
-            </p>
-            <p class = "tab">
-              Beyond academics, I'm a member of Carnegie Mellon's varsity swim and dive team, specializing in springboard diving for the past seven years. The feeling of freedom and the adrenaline rush I experience while flipping and twisting through the air is truly exhilarating. Additionally, I'm actively involved in Phi Delta Theta, where I strive to build connections and meet new people, a goal I set for myself when I entered college.
-            </p>
-            <p class = "tab">
-              At home, I have three brothers: Matthew (22), Tim (17), and Chris (15), and two dogs named Ollie and Perkins. Growing up in a large family was a wonderful experience for me, as there was always someone to talk to or spend time with. As a family, we share a love for travel, trying out exotic cuisines, and playing board games. Being one of four boys made it easy to form teams for games and competitions. Scuba diving is a passion we all share, and I hope we continue to embark on exciting adventures together.
-            </p>
-            
-            <p>
-
-              
-               
-                <br><br>
-               
-                <!-- <br><br>
-                Some additional interests of mine include movies(I am a huge fan of star wars and the MCU), yoga, cooking, chess, billiards, and National Parks. -->
-              </p>
-        </div>
-            <div class="col-lg-6">
-               
-                <div id="myCarousel" class="carousel slide mb-6 pics" data-bs-ride="carousel" data-bs-theme="light" style = "width:100%; float:right; margin-left:3%; margin-bottom:3%;" >
-                    <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src='./Images/photos/photo6.png' alt="My CMU Swim and Dive Photos"/>
-                    </div>
-                    <div class="carousel-item">
-                      <img src='./Images/photos/photo4.png' alt="My CMU Swim and Dive Photos"/>
-                    </div>
-                    <div class="carousel-item">
-                      <img src='./Images/photos/photo2.png' alt="My CMU Swim and Dive Photos"/>
-                    </div>
-                    </div>
-
-                    
-                    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>
-            
-        </div>
-        <hr>
-        <h1>Highlighted Projects</h1>
-        <div class = "row">
-          <div class = "col-lg-12">
-            <div id="myCarousel2" class="carousel slide mb-6" data-bs-ride="carousel" data-bs-theme="light" >
-              
-              <div class="carousel-inner">
-              <div class="carousel-item card active">
-                  <a href="projects/cafe.html"><img src='./Images/covers/cafe23Cover.png'  alt="Image of Coffee"/></a>
-                      <div class="card-body">
-                          <h5 class="card-title">App Design and Development: Cafe 23</h5>
-                          <p class="card-text secret">An Employee Management App for a cafe built with ruby on rails<br><strong>Skills:</strong> Ruby on Rails, MVC, Databases, HTML, CSS, Javascript </p>
-                  </div>
-              </div>
-              <div class="carousel-item card">
-                  <a href="projects/vui.html">
-                  <img src="./Images/covers/vui.png"  alt="Image of 4 suits of playing cards"/>
-                  <div class="card-body">
-                      <h5 class="card-title">Voiceflow: Conversational User Interfaces</h5>
-                      <p class="card-text secret">Utilizing Voiceflow software to design a CUI for a specific user. <br><strong>Skills:</strong> Voiceflow & User Centered Design</p>
-                      <!-- <a href="#" class="btn btn-primary secret">Go somewhere</a> -->
-                    </div>
-                  </a>
-              </div>
-              <div class="carousel-item card">
-                <a href="projects/spades.html">
-                <img src="./Images/covers/spades.png"  alt="Image of 4 suits of playing cards"/>
-                <div class="card-body">
-                  <h5 class="card-title">15-112 Term Project: Spades</h5>
-                  <p class="card-text secret">The Classic Card Game Spades remade with Python and Tkinter Graphics<br><strong>Skills:</strong> Python, Alpha-Beta-Prunning, Algorithms</p>
-                    <!-- <a href="#" class="btn btn-primary secret">Go somewhere</a> -->
-                  </div>
-                </a>
-            </div>
-              </div>
-  
-              
-              <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel2" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-              </button>
-
-              <button class="carousel-control-next" type="button" data-bs-target="#myCarousel2" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-              </button>
-              <!-- <div class="carousel-indicators" style="padding-top:25%;">
-                <button type="button" data-bs-target="#myCarousel2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#myCarousel2" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#myCarousel2" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div> -->
-            </div>
-          </div>
-        </div>
-        <div class = "row">
-          <div class = "col-lg-4"></div>
-          <div class = "col-lg-4">
-            <div class="btn-group but" role="group" style=" background-color: #232323; width: 100%;"><a class="btn btn-outline-light text-uppercase" role="button" href="project.html">More Projects</a></div>
-          </div>
-          <div class = "col-lg-4"></div>
-        </div>
-        <hr>
-       
-        <div class = "row">
-          <!-- <div class = "col-lg-6">
-            <h1>Diving</h1>
-            <iframe width="600" height="630" src="https://www.youtube.com/embed/haf0VNuaSQQ?autoplay=1&loop=1&controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          </div> -->
-          <div class = "col-lg-6">
-            <h1>Athletic and Academic Honors</h1>
-            <ul>
-              <li>CSCAA All American Team 2 2022-23</li>
-              <li>UAA All-Academic 2022-23</li>
-              <li>Deans List High Honors F22 and S23</li>
-              <li>Deans List Honors S22</li>
-              <li>CSCAA All American Honorable Mention 2021-22</li>
-              <li>NISCA All American 2019-20</li>
-              
-            </ul>
-          </div>
-        </div>
-       
-
-        <div class = "row centered mobile">
-          <div class = "col-sm-12">
-            <hr>
-          <a href="mailto:lindstromhci@gmail.com"><img src="Images/socials/mail.png" style = "height:50px; width:50px; margin:2%;" alt="Email Icon"></a>
-          <a href="https://www.linkedin.com/in/jonathan-lindstrom" target = "_Blank"><img src="Images/socials/linkedin (1).png" style = "height:50px; width:50px; margin:2%;" alt="Facebook Icon"></a>
-          <a href="https://www.instagram.com/jonathan_lindstrom14/" target="_Blank"><img src="Images/socials/instagram.png" style = "height:50px; width:50px; margin:2%;" alt="Instagram Logo"></a> 
-          <a href="https://github.com/jlindstrom12" target="_Blank"><img src="Images/socials/github.png" style = "height:50px; width:50px; margin:2%;" alt="Instagram Logo"></a> <br/>
-          </div>
-        </div>
-        <hr>
-
-
-
+   
+    <div class = "row centered" style = "margin-bottom:0;">
+      <div class="col-lg-12">
+        <div class="scroll-arrow" id="scrollArrow">&#x25BC;</div>
       </div>
-      <script>
-        const observerOptions = {
-      root: null,
-      rootMargin: "0px",
-      threshold: 0.15
-      };
-      
-      function observerCallback(entries, observer) {
-      entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        // fade in observed elements that are in view
-        entry.target.classList.replace('fadeOut', 'fadeIn');
-      } else {
-        // fade out observed elements that are not in view
-        entry.target.classList.replace('fadeIn', 'fadeOut');
-      }
-      });
-      }
-      
-      const observer = new IntersectionObserver(observerCallback, observerOptions);
-      
-      const fadeElms = document.querySelectorAll('.fade');
-      fadeElms.forEach(el => observer.observe(el));
-      </script>
-      </body>
+    </div>
+    </section>
+    <script>
+      document.getElementById('scrollArrow').addEventListener('click', function() {
+      const targetSection = document.getElementById('interests');
+      const targetPosition = targetSection.offsetTop;
 
-</html>
+      window.scrollTo({ top: targetPosition, behavior: 'smooth' });
+      });
+    </script>
+    <br><br><br><br><br><br>
+    <section id = "interests">
+      <div class = "row">
+        <div class = "col-lg-4">
+          <div class = "interest">
+            <img src = "Images/photos/photo1.jpg">
+            <div class = "interest_caption">
+              <h2>Diving</h2>
+              <p class = "tab">Over the last 7 years, I've dedicated myself to competitive springboard diving, proudly representing Carnegie Mellon's Dive team while vying for victory across the nation. The sensation of soaring through the air, executing flips and twists, is an electrifying experience that fuels my passion.
+              </p>
+            </div>
+            
+          </div>
+        </div>
+        <div class = "col-lg-4">
+          <div class = "interest">
+            <img src = "Images/photos/photo2.png">
+            <div class = "interest_caption">
+            <h2>National Parks</h2>
+           
+            <p class = "tab">I adore exploring national parks. From the rugged terrains to the serene landscapes, each park I visit provides a unique experience. There's this inexplicable thrill in discovering the hidden gems and breathtaking vistas that our country's national parks offer. A goal of mine is to visit 1 new park every year.</p>
+          </div>
+          </div>
+        </div>
+        <div class = "col-lg-4">
+          <div class = "interest">
+            <img src = "Images/photos/photo10.png">
+            <div class = "interest_caption">
+              <h2>Scuba</h2>
+              <p class = "tab">
+                I also adore scuba diving. Something about floating weightless in an alien world is wild to me. My favorite experience was going diving with manta rays off the coast of Hawaii. Seeing these huge creatures swimming so close to me that I could touch them was absolutely magical.
+              </p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class = "row">
+        <div class = "col-lg-4">
+          <div class="btn-group but" role="group" style=" background-color: #232323; left: 20%; width: 60%; margin-top: 20px;"><a class="btn btn-outline-light text-uppercase" role="button" href="portfolio.html">Work</a></div>  
+        </div>
+        <div class = "col-lg-4">
+          <div onclick="window.open('Docs/resume.pdf');" class="btn-group but" role="group" style=" background-color: #232323; left: 20%; width: 60%; margin-top: 20px;"><a class="btn btn-outline-light text-uppercase" role="button" >Resume</a></div>  
+        </div>
+        <div class = "col-lg-4">
+          <div onclick="window.open('Docs/transcript.pdf');" class="btn-group but" role="group" style=" background-color: #232323; left: 20%; width: 60%; margin-top: 20px;"><a class="btn btn-outline-light text-uppercase" role="button">Transcript</a></div>  
+        </div>
+      </div>
+      
+       
+
+     
+
+    </section>
+
+    <!-- <script>
+      // document.getElementById('scrollArrow').addEventListener('click', function() {
+      //   window.scrollTo({ top: window.innerHeight, behavior: 'smooth' });
+      // });
+      const navLinks = document.querySelectorAll('nav li');
+      document.getElementById('scrollPortfolio').addEventListener('click', function() {
+        navLinks.forEach(link => link.classList.remove('active'));
+        navLinks[1].classList.add('active');
+
+        window.scrollTo({ top: window.innerHeight, behavior: 'smooth' });
+       
+      });
+      document.getElementById('scrollTop').addEventListener('click', function() {
+        navLinks.forEach(link => link.classList.remove('active'));
+        navLinks[0].classList.add('active');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+      
+   
+    const sections = document.querySelectorAll('section');
+
+
+
+
+function scrollToSection(event) {
+  event.preventDefault();
+  const targetId = event.currentTarget.getAttribute('href');
+  const targetSection = document.querySelector(targetId);
+  if (targetSection) {
+    targetSection.scrollIntoView({ behavior: 'smooth', block: 'start'});
+  }
+}
+
+// window.addEventListener('scroll', checkSectionInView);
+// window.addEventListener('resize', checkSectionInView);
+
+
+
+navLinks.forEach(link => {
+  link.addEventListener('click', scrollToSection);
+});
+
+    </script> -->
+    
+
+
+    <!-- <footer>
+      <ul class="social-icons">
+        <li><a href="https://www.linkedin.com/in/yourusername" class="social-icon-link" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="https://www.twitter.com/yourusername" class="social-icon-link" target="_blank"><i class="fab fa-instagram"></i></a></li>
+      </ul>
+    </footer> -->
+    
+    
+  </div>
+  </body>
+
+  </html>
