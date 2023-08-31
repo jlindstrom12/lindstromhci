@@ -11,18 +11,31 @@
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         outline:none;
     }
-/*
     .desktop {
         display: none;
     }
+    .mobile{
+        display:block;
+    }
+    #topbar{
+        box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        z-index: 3; 
+        width:100%;
+        position:sticky;
+        top:0;
+    }
+
+    .navbar{
+        background-color: RGBA(255,255,255,var(--bs-bg-opacity,1))!important;
+    }
+/*
+   
 
     #content{
         width:100%;
     }
 
-    .mobile{
-        display:block;
-    }
+   
 
     #topbar{
         box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);

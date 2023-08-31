@@ -126,7 +126,7 @@ footer{
          #2337cf, #7144ee);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    font-family: Stencil Std, fantasy
+    font-family: Stencil Std, serif
 }
 .centered{
     justify-content:center; 
@@ -148,6 +148,11 @@ footer{
     font-size: 100%;
     margin-bottom:12px;
   }
+
+  .mobile{
+    display:none;
+}
+
 
   .courses p{
     font-size: 92%;
