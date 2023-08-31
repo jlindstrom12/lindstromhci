@@ -7,7 +7,7 @@ body {
 	line-height: 1.7em; /* The line-height property in CSS controls the space 
 	                       between lines of text. */
 	color: #000000; /* Hex Color Black */
-    background-color: #ECECEC;
+    background-color: #fff;
     background-image: url('./Images/me.png');
     background-repeat: no-repeat;
     background-attachment: fixed;

@@ -42,10 +42,11 @@
       <script>
         let n = 800;
         let ps = [];
-        let squareSize = 800;
+        // let squareSize = 800;
     
         function setup() {
           createCanvas(windowWidth, windowHeight);
+          squareSize = min(width, height) / 1.5;
          
           for (let i = 0; i < n; i++) {
             ps.push({ vector: createVector(random(width), random(height)), timestamp: millis() });
@@ -77,7 +78,7 @@
             let hue = map(p.x, 0, width, 0, 360);
             
             stroke(hue, 100, 100, opacity); // Apply hue and opacity to stroke
-            strokeWeight(2); // Set stroke weight
+            strokeWeight(1); // Set stroke weight
             
             point(p.x, p.y);
           }
@@ -93,7 +94,7 @@
       <h1 style="font-family:Stencil Std, serif; text-align: center;color: #000;font-size: 5vw; text-decoration:none;">Jonathan</h1>
       <h1 style="font-family:Stencil Std, serif; text-align: center;color: #000;font-size: 5vw; text-decoration:none;">Lindstrom</h1>
    
-      <h2 style=" font-family:Stencil Std, serif; text-align: center;color: #000; font-size: 2vw; text-decoration:none;">Design . Programming . Diving</h2>
+      <h2 style=" font-family:Stencil Std, serif; text-align: center; background-color: #fff;color: #000; font-size: 2vw; text-decoration:none;">Design . Programming . Diving</h2>
         
       <div>
         <div class="btn-group but" role="group" style=" background-color: #232323; left: 30%; width: 40%; margin-top: 20px;"><a class="btn btn-outline-light text-uppercase" role="button" href="about.html">Dive In</a></div>  
@@ -109,9 +110,9 @@
      <div class = "grainy-gradient-intro name">
      <div style="display: inline-block;letter-spacing: 8px;">
        <h1 style="font-family:Stencil Std, serif; text-align: center;color: #000;font-size: 7vw; text-decoration:none;">Jonathan</h1>
-       <h1 style="font-family:Stencil Std, ; text-align: center;color: #000;font-size: 7vw; text-decoration:none;">Lindstrom</h1>
+       <h1 style="font-family:Stencil Std, serif; text-align: center;color: #000;font-size: 7vw; text-decoration:none;">Lindstrom</h1>
     
-       <h2 style=" font-family:Stencil Std, serif; text-align: center;color: #000; font-size: 3vw; text-decoration:none;">Design . Programming . Diving</h2>
+       <h2 style=" font-family:Stencil Std, serif; background-color: #fff; text-align:  center;color: #000; font-size: 3vw; text-decoration:none;">Design . Programming . Diving</h2>
          
        <div>
          <div class="btn-group but" role="group" style=" background-color: #232323; left: 30%; width: 40%; margin-top: 20px;"><a class="btn btn-outline-light text-uppercase" role="button" href="about.html">Dive In</a></div>  
