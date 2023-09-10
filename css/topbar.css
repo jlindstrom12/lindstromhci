@@ -44,7 +44,8 @@
   
   /* Style the active navigation link */
   .navbar-nav .nav-link.active {
-    background-color: ; /* Change color of the active link
+    font-weight:bold ;
+    /* color:green; /* Change color of the active link */
    
   /* Style the navbar toggler icon */
   /*  */
