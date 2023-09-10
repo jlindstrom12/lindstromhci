@@ -141,12 +141,14 @@
     </section>
     <script>
       document.getElementById('scrollArrow').addEventListener('click', function() {
-      const targetSection = document.getElementById('interests');
-      const targetPosition = targetSection.offsetTop;
-
-      window.scrollTo({ top: targetPosition, behavior: 'smooth' });
+        const headerHeight = 0.12 * window.innerHeight; // Calculate the height of the sticky header (10% of viewport height)
+        const targetSection = document.getElementById('interests');
+        const targetPosition = targetSection.offsetTop - headerHeight;
+    
+        window.scrollTo({ top: targetPosition, behavior: 'smooth' });
       });
     </script>
+    
     <hr class = "mobile">
     
    
@@ -257,7 +259,6 @@ navLinks.forEach(link => {
         <li><a href="https://www.twitter.com/yourusername" class="social-icon-link" target="_blank"><i class="fab fa-instagram"></i></a></li>
       </ul>
     </footer> -->
-    
     <footer>
       <hr>
       <div class = "row">
