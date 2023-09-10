@@ -6,8 +6,8 @@ body {
 	                    - you can then change with em in the other areas */
 	line-height: 1.7em; /* The line-height property in CSS controls the space 
 	                       between lines of text. */
-	color: #000000; /* Hex Color Black */
-    background-color: #fff;
+	color: #2f2f2f;; /* Hex Color Black */
+    background-color: #fdfdfd;
     background-image: url('./Images/me.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -32,7 +32,7 @@ body {
 }
 
 h1{
-    color:#000;
+    color:#2f2f2f;;
    
     font-size: 6vh;
     text-decoration: none;
@@ -88,8 +88,8 @@ a{
 }
 
 .but a:hover{
-    background-color:#fff;
-    color:#000;
+    background-color:#fdfdfd;
+    color:#2f2f2f;;
     outline:auto;
 }
 
@@ -137,7 +137,7 @@ footer{
 
 .navbar-toggler {
     
-    background-color: white;
+    background-color: #fdfdfd;
 }
 
 .courses {
@@ -167,13 +167,21 @@ footer{
   }
   
   .courses tr:nth-child(even){
-    background-color: #ffff;
+    background-color: #fdfdfd;
     color: #232323;}
   .courses tr:nth-child(odd){
     background-color: #DDDDDD;
     color:#232323;}
 
     .tab { text-indent:40px }
+
+    .nav-pills{
+        color:#232323;
+        --bs-nav-link-color:  #232323;
+        --bs-nav-link-hover-color:  #B7D1DA;
+        --bs-nav-pills-link-active-bg: #B7D1DA;
+        --bs-nav-pills-link-active-color: #232323;
+      }
 
  
 /* h2{

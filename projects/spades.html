@@ -18,7 +18,7 @@
 <body>
   <nav class="desktop navbar navbar-expand navbar-light bg-light header" aria-label="Fourth navbar example">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html"><h1>Jonathan Lindstrom</h1></a>
+      <a class="navbar-brand" href="../index.html"><h1>Jonathan Lindstrom</h1></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -46,7 +46,7 @@
       <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
          
-          <a class="navbar-brand" href="index.html"><h1>Jonathan Lindstrom</h1></a>
+          <a class="navbar-brand" href="../index.html"><h1>Jonathan Lindstrom</h1></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbars" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -86,6 +86,11 @@
         </div>
 
         <hr>
+
+        <div class = "page_cover_img">
+          <img src = "../Images/spades/Spades_MockUp.png" alt = "Mockup of Spades">
+      </div>
+
     
     
         
@@ -130,7 +135,7 @@
       <div class ="row">
         <div class="col-lg-6">
           <h2>Challenges</h2>
-          <p>The biggest challenge while programming this game was creating and testing the minimax and alpha beta pruning algorithms. The goal was for the CPUs to look at all the cards that had been played and discarded during that round as well as the cards they were holding and the cards that had been played during that trick to determine which of their cards was best. If they had 0 chance of winning said trick they would select their lowest card that they can play. If they had a card that had a high chance of winning they would play it. While looking down all the branches of possible card combos that could be played it gives each branch a numerical evaluation and cuts off branches as it goes that are worse than branches surrounding it. This method allows for the CPUs to determine the worst possible scenarios in terms of cards played so they can play accordingly.
+          <p class ="tab">The biggest challenge while programming this game was creating and testing the minimax and alpha beta pruning algorithms. The goal was for the CPUs to look at all the cards that had been played and discarded during that round as well as the cards they were holding and the cards that had been played during that trick to determine which of their cards was best. If they had 0 chance of winning said trick they would select their lowest card that they can play. If they had a card that had a high chance of winning they would play it. While looking down all the branches of possible card combos that could be played it gives each branch a numerical evaluation and cuts off branches as it goes that are worse than branches surrounding it. This method allows for the CPUs to determine the worst possible scenarios in terms of cards played so they can play accordingly.
           </p>
     
         </div>
@@ -167,7 +172,7 @@
       <div class ="row">
         <h2>Changes I Would Make</h2>
         <div class="col-lg-12">
-          <p>If I had more time there are several things I would have added or changed. First off I have a lot more experience with UI now. I think the UI I made was decent but I believe now I would have been able to design a more interactive UI with animations. 
+          <p class ="tab">If I had more time there are several things I would have added or changed. First off I have a lot more experience with UI now. I think the UI I made was decent but I believe now I would have been able to design a more interactive UI with animations. 
             Furthermore, I would have refined the CPU algorithm to include nil as a potential option. Essentially if the CPU has a hand that is so bad that the expected number of tricks was 0 it would bid nil. If the CPU or player successfully didn’t make a single trick it would be +100 points but if they got a single trick it would be -100 regardless if their partner made their bid or not. I ran into some issues with the scoring system with this rule so I didn’t include it.
             Finally I would have changed some of the color scheme. Black on dark green has low contrast and is hard to read which I didn’t realize at the time. After taking more design courses and understanding the concept of contrast more this is absolutely something I would have considered when designing the interface the user interacts with.
           </p>
