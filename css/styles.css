@@ -42,6 +42,10 @@ body {
     display:none;
 }
 
+.active{
+    font-weight:bold;
+}
+
 h1{
     color:var(--text-color);
     font-size: 6vh;
