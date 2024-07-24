@@ -51,6 +51,9 @@ nav h1{
     font-weight:bold ;
   }
 
+  .nav-link .active{
+    font-weight:bold;
+  }
    
 
   

@@ -80,7 +80,7 @@ function setProjectDetails() {
                 title: 'Faulty Robots',
                 date: 'Jan - May 2024',
                 team: 'Team: Al Hassen, Luke Han, & Animesh Ghose',
-                imgSrc: './Images/faulty_robots/home_screen.png',
+                imgSrc: './Images/Faulty_Robots/home_screen.png',
                 content: Faulty
             },
             // Add more projects here
