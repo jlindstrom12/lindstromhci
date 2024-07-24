@@ -14,39 +14,16 @@
     <link href="css/styles.css" rel="stylesheet">
     <link href="css/topbar.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
-    <!-- <link href="css/sidebar.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
-    
-    <link href="css/project.css" rel="stylesheet"> -->
     <link rel="stylesheet" media="Screen and (max-width:1024px)" type="text/css" href="css/stylesMobile.css"/>
   </head>
-  <nav class="desktop navbar navbar-expand navbar-light bg-light header" aria-label="Fourth navbar example">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html"><h1>Jonathan Lindstrom</h1></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div style = "float:right">
-      <div class="collapse navbar-collapse" id="navbarsExample04">
-        <ul class="navbar-nav me-auto mb-2 mb-md-0">
-
-         
-          <li class="nav-item">
-            <a class="nav-link  active" id = "scrollPortfolio" href="portfolio.html">Work</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" id = "scrollTop" aria-current="page" href="about.html">About</a>
-          </li>
-         
-         
-        </ul>
-      </div>
-       
-      </div>
-    </div>
-    
-  </nav>
- 
+  <body>
+    <nav class="desktop header" aria-label="Fourth navbar example">
+      <a href="index.html"><h1>Jonathan Lindstrom</h1></a>
+        <div class = "navigation">
+          <a class="nav-link  active" id = "scrollPortfolio" href="portfolio.html">Work</a>
+          <a class="nav-link" id = "scrollTop" aria-current="page" href="about.html">About</a>
+        </div>
+    </nav>
     <div class = "mobile" id = "topbar">
       <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
@@ -59,13 +36,13 @@
           <div class="collapse navbar-collapse" id="navbars">
             <hr>
             <ul class="navbar-nav me-auto mb-2">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../portfolio.html">Work</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  active" aria-current="page" href="../about.html">About Me</a>
+              </li>
              
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../portfolio.html">Work</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="../about.html">About Me</a>
-              </li>
 
             </ul>
             
@@ -73,7 +50,196 @@
         </div>
       </nav>
     </div>
-  <body class = "fade_in">
+
+    <div id = "content">
+      <ul class="nav nav-tabs" id="myTabs" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="tab1-tab" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">UX Design</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="tab2-tab" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">Web & App Development</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="tab3-tab" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="false">Research</a>
+        </li>
+      </ul>
+
+      <div class="tab-content">
+        <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
+          
+              <div class = "card project">
+                  <a href="/detail.html?project=CareCompanion">
+                    <img src="./Images/covers/Care.png"  alt="CareCompanion Screens"/>
+                    <div class="card-body">
+                      <h5 class="card-title">CareCompanion: Transforming Medical Support</h5>
+                      <p class="card-text secret">Analyzing a Persona to create a Human-Centered app addressing his medical needs<br><strong>Skills:</strong> Figma, User Testing, Persona Analysis</p>
+                    </div>
+                  </a>
+              </div>
+
+              <div class = "card project">
+                <a href="/detail.html?project=CafeDashboards">
+                  
+                  <img src="./Images/cafe/Dashboard_Mockup.png"  alt="Cafe23 Screens"/>
+                  <div class="card-body">
+                      <h5 class="card-title">Cafe 23: Admin & Employee Centered Dashboard Design</h5>
+                      <p class="card-text secret">Designing mockup dashboards for Employee and Admin needs<br><strong>Skills:</strong> Figma, Human-Centered Design, Design Principles</p>
+                      
+                  </div>
+                </a>
+              </div>
+
+              <div class = "card project">
+                <a href="/detail.html?project=MoodMoji">
+                  
+                  <img src="./Images/MoodMoji/Mood_Mocks.png"  alt="MoodMoji Screens"/>
+                  <div class="card-body">
+                      <h5 class="card-title">M😜🥳dM🙃ji: Harnessing Persuasive Design to Address Procrastination</h5>
+                      <p class="card-text secret">App designed to help tackle procrastination of social media usage through an emoji diary<br><strong>Skills:</strong> Figma, Persausive Design, Obfuscation</p>
+                  </div>
+                </a>
+              </div>
+
+              
+
+
+          </div>
+          <!-- End of UX Projects -->
+          <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
+
+            <div class = "card project">
+              <a href="projects/cafe.html">
+               
+                <img src="./Images/cafe/Screenshot 2023-09-09 at 2.37.15 PM.png"  alt="Image of Coffee"/>
+                <div class="card-body">
+                    <h5 class="card-title">Cafe 23: Full Stack App Development</h5>
+                    <p class="card-text secret">Creating the full stack for an employee management app using ruby on rails. <br><strong>Skills:</strong> Ruby on Rails, MVC, Databases, HTML, CSS, Javascript </p>
+                   
+                </div>
+              </a>
+            </div>
+
+            <div class = "card project">
+              <a href="/detail.html?project=DREaM">
+               
+                <img src="./Images/DREaM/DREaM_home.png"  alt="DREaM Home Page"/>
+                <div class="card-body">
+                    <h5 class="card-title">DREaM: Distant Reading Early Modernity</h5>
+                    <p class="card-text secret">Fixing a depricated Java application used for querying 44,000 texts between 1400 and 1700<br><strong>Skills:</strong> Java, Databases, Logo Design, HTML </p>
+                   
+                </div>
+              </a>
+            </div>
+
+            <div class = "card project">
+              <a href="/detail.html?project=BokehJS">
+               
+                <img src="./Images/bokeh/Logo.png"  alt="Bokeh JS Logo"/>
+                <div class="card-body">
+                    <h5 class="card-title">Open Source Contribution: Bokeh JS </h5>
+                    <p class="card-text secret">XXX<br><strong>Skills:</strong>Javascript, Open Source, Github</p>
+                   
+                </div>
+              </a>
+            </div>
+
+            <!-- <div class = "card project">
+              <a href="projects/cafe.html">
+               
+                <img src="./Images/cafe/Screenshot 2023-09-09 at 2.37.15 PM.png"  alt="Image of Coffee"/>
+                <div class="card-body">
+                    <h5 class="card-title">College Cooker: </h5>
+                    <p class="card-text secret">Using SpoonacularAPI to create an app to come up with recipes based on ingridients<br><strong>Skills:</strong>Full-Stack, JavaScript, APIs</p>
+                   
+                </div>
+              </a>
+            </div> -->
+
+          </div>
+          <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">
+            <div class = "card project">
+              <a href="/detail.html?project=FabRobotics">
+               
+                <img src="./Images/FabRobotics/Fab_home.png"  alt="Character Being 3D Printed"/>
+                <div class="card-body">
+                    <h5 class="card-title">FabRobotics: Fusing 3D Printing with Mobile Robots to Advance Fabrication, Robotics, and Interaction</h5>
+                    <p class="card-text secret">Research Collaboration between UChicago and MIT, Published by TEI<br><strong>Skills:</strong>Full-Stack, Flask, APIs, Toio, Fabrication</p>
+                   
+                </div>
+              </a>
+            </div>
+
+            <div class = "card project">
+              <a href="/detail.html?project=Faulty_Robots">
+               
+                <img src="./Images/faulty_robots/home_screen.png"  alt="Image of Coffee"/>
+                <div class="card-body">
+                    <h5 class="card-title">Faulty Robots: Replication</h5>
+                    <p class="card-text secret">Recreating a Human Robot Interaction Project<br><strong>Skills:</strong>Full-Stack, JavaScript, APIs</p>
+                   
+                </div>
+              </a>
+            </div>
+
+          </div>
+
+          <footer>
+            <hr>
+            <div class = "row">
+              <div class = "col-lg-4 gradient">
+
+              </div>
+              <div class = "col-lg-4"></div>
+              <div class = "col-lg-4 gradient">
+              <ul class="social-icons">
+                <li><a href="https://www.linkedin.com/in/jonathan-lindstrom/" class="social-icon-link"  target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://www.instagram.com/jonathan_lindstrom14/" class="social-icon-link"  target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="mailto: lindstromhci@gmail.com" class="social-icon-link"  target="_blank"><i class="fa-regular fa-envelope"></i></a></li>
+               
+              </ul>
+            </div>
+          </div>
+        </footer> 
+        
+
+
+        <!-- <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab"> -->
+         
+       
+          
+  
+  
+  <!-- 
+
+  <nav class="navbar">
+    <div class = "mobile" id = "topbar">
+
+          <a href="index.html"><h1>Jonathan Lindstrom</h1></a>
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbars" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse" id="navbars">
+            <ul>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../portfolio.html">Work</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../about.html">About Me</a>
+              </li>
+            </ul>
+          </div>
+    </div>
+  </nav> -->
+
+  
+ 
+   
+
+
+
+  <!-- <body class = "fade_in">
     <div id = "content">
 
       <ul class="nav nav-tabs" id="myTabs" role="tablist">
@@ -85,7 +251,7 @@
         </li>
     </ul>
 
-    <!-- Tab panes -->
+    
     <div class="tab-content">
         <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
           <div class = "row">
@@ -96,7 +262,7 @@
                     <div class="card-body">
                       <h5 class="card-title">CareCompanion: Transforming Medical Support</h5>
                       <p class="card-text secret">Analyzing a Persona to create a Human-Centered app addressing his medical needs<br><strong>Skills:</strong> Figma, User Testing, Persona Analysis</p>
-                      <!-- <a href="#" class="btn btn-primary secret">Go somewhere</a> -->
+                     
                     </div>
                   </a>
                 </div>
@@ -108,7 +274,7 @@
                       <div class="card-body">
                           <h5 class="card-title">Voiceflow Journey: Crafting Personalized Experiences with CUIs</h5>
                           <p class="card-text secret">Analyzing a Persona to create a personalized experience <br><strong>Skills:</strong> Voiceflow, User-Centered Design</p>
-                          <!-- <a href="#" class="btn btn-primary secret">Go somewhere</a> -->
+                          
                       </div>
                       </a>
                   </div>
@@ -122,7 +288,7 @@
                   <div class="card-body">
                     <h5 class="card-title">Enhancing Game Design Project Presentations with Targeted Dashboards</h5>
                     <p class="card-text secret">Single Page dashboard designs for teachers and students to help steamline presentation feedback.<br><strong>Skills:</strong> Figma, User-Cenetered Design, Animation</p>
-                    <!-- <a href="#" class="btn btn-primary secret">Go somewhere</a> -->
+                   
                   </div>
                 </a>
               </div>
@@ -130,12 +296,12 @@
             <div class = "col-lg-6">
               <div class = "card project">
                   <a href="projects/cafe_dashboards.html">
-                    <!-- <img src="./Images/covers/cafe23Cover.png"  alt="Image of Coffee"/> -->
+                    
                     <img src="./Images/cafe/Dashboard_Mockup.png"  alt="Image of Coffee"/>
                     <div class="card-body">
                         <h5 class="card-title">Cafe 23: Admin & Employee Centered Dashboard Design</h5>
                         <p class="card-text secret">Designing mockup dashboards for Employee and Admin needs<br><strong>Skills:</strong> Figma, Human-Centered Design, Design Principles</p>
-                        <!-- <a href="#" class="btn btn-primary secret">Go somewhere</a> -->
+                        
                     </div>
                   </a>
                 </div>
@@ -149,12 +315,12 @@
             <div class = "col-lg-6">
               <div class = "card project">
                   <a href="projects/cafe.html">
-                    <!-- <img src="./Images/covers/cafe23Cover.png"  alt="Image of Coffee"/> -->
+                   
                     <img src="./Images/cafe/Screenshot 2023-09-09 at 2.37.15 PM.png"  alt="Image of Coffee"/>
                     <div class="card-body">
                         <h5 class="card-title">Cafe 23: Full Stack App Development</h5>
                         <p class="card-text secret">Creating the full stack for an employee management app using ruby on rails. <br><strong>Skills:</strong> Ruby on Rails, MVC, Databases, HTML, CSS, Javascript </p>
-                        <!-- <a href="#" class="btn btn-primary secret">Go somewhere</a> -->
+                       
                     </div>
                   </a>
                 </div>
@@ -167,7 +333,7 @@
                 <div class="card-body">
                   <h5 class="card-title">Database Term Project: Open Table</h5>
                   <p class="card-text secret">Analzying a buisness and coming up with 9 common queries they would use and 1 novel feature to add to the site<br><strong>Skills:</strong> Python, SQL, Pymongo, Database Design</p>
-                  <!-- <a href="#" class="btn btn-primary secret">Go somewhere</a> -->
+                 
                 </div>
               </a>
             </div>
@@ -177,12 +343,12 @@
             <div class = "col-lg-6">
               <div class = "card project">
                   <a href="projects/spades.html">
-                    <!-- <img src="./Images/covers/spades.png"  alt="Image of 4 suits of playing cards"/> -->
+                    
                     <img src="./Images/spades/Spades_MockUp.png"  alt="Image of Coffee"/>
                     <div class="card-body">
                       <h5 class="card-title">15-112 Term Project: Spades</h5>
                       <p class="card-text secret">The Classic Card Game Spades remade with Python and Tkinter Graphics<br><strong>Skills:</strong> Python, Alpha-Beta-Prunning, Algorithms</p>
-                      <!-- <a href="#" class="btn btn-primary secret">Go somewhere</a> -->
+                     
                     </div>
                   </a>
               </div>
@@ -204,20 +370,20 @@
         <div class = "col-lg-4 gradient">
           <ul class="social-icons">
             <li>Made From Scratch.</li>
-            <!-- <li><a href="https://www.twitter.com/yourusername" class="social-icon-link" target="_blank"><i class="fa-regular fa-envelope"></i></a></li> -->
+          
           </ul>
         </div>
         <div class = "col-lg-4"></div>
         <div class = "col-lg-4 gradient">
         <ul class="social-icons">
-          <li><a href="https://www.linkedin.com/in/jonathan-lindstrom/" class="social-icon-link" style = "color: #1ccd28;" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-          <li><a href="https://www.instagram.com/jonathan_lindstrom14/" class="social-icon-link" style = "color: rgb(2, 163, 139);" target="_blank"><i class="fab fa-instagram"></i></a></li>
-          <li><a href="mailto: lindstromhci@gmail.com" class="social-icon-link" style = "color: #236ecf;" target="_blank"><i class="fa-regular fa-envelope"></i></a></li>
-          <!-- <li><a href="https://www.twitter.com/yourusername" class="social-icon-link" target="_blank"><i class="fa-regular fa-envelope"></i></a></li> -->
+          <li><a href="https://www.linkedin.com/in/jonathan-lindstrom/" class="social-icon-link"  target="_blank"><i class="fab fa-linkedin"></i></a></li>
+          <li><a href="https://www.instagram.com/jonathan_lindstrom14/" class="social-icon-link"  target="_blank"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="mailto: lindstromhci@gmail.com" class="social-icon-link"  target="_blank"><i class="fa-regular fa-envelope"></i></a></li>
+         
         </ul>
       </div>
     </div>
-  </footer>
+  </footer> -->
 </div>
   </body>
 

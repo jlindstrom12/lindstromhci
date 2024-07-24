@@ -18,10 +18,7 @@
         display:block;
     }
     
-    .navbar{
-        background-color: RGBA(255,255,255,var(--bs-bg-opacity,1))!important;
-    }
-
+    
     .project{
         max-width: 100vw;
         height: 32vh;
@@ -37,125 +34,12 @@
         height:auto;
     }
 
-    #topbar{
+    /* #topbar{
         box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
         z-index: 3; 
         width:100%;
         position:sticky;
         top:0;
-    }
-}
-
-/*
-   
-
-    #content{
-        width:100%;
-    }
-
-   
-
-    #topbar{
-        box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        z-index: 3; 
-        width:100%;
-        position:sticky;
-        top:0;
-    }
-
-    .navbar{
-        background-color: RGBA(35,35,35,var(--bs-bg-opacity,1))!important;
-    }
-
-    .project{
-        max-width: 100vw;
-        height: 32vh;
-    }
-
-    .carousel .carousel-item {
-        height:35vh;
-       
-      }
-    .carousel:hover .secret, .project:hover .secret {
-        display:none;}
-
-    .carousel:hover .card-body, .project:hover .card-body {
-           padding-top: 12px;
-           padding-bottom: 12px;
-           color: #DDDDDD;
-           background-color:#232323;
-        
-        }
-        .experience{
-            max-width: 100vw;
-            position: relative;
-            margin: auto;
-            overflow:hidden;
-            height: auto;
-            margin-bottom:6%;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            outline:none;
-            background-color:#232323;
-            color:#DDDDDD;
-           
-          }
-        
-    
-    }
-
-    
-}
-    
-    /* body{
-        font-size: 100%;
-        background: #faf7f3;
-    }
-    #container{
-        width:100%;
-        margin:1em auto;
-    }
-    #top_row h1{
-        color:#2a1d1c;
-        font-size:2em;
-    }
-    #top_row h3{
-        font-size:1em;
-    }
-    #top_row nav{
-        display:none;
-    }
-    #content{
-        float: left;
-        width:100%;
-        margin:0;
-        padding:1em;
-        border-right:none;
-
-    }
-    #content h3{
-        font-size:1.25em;
-        margin:0;
-    }
-    #content img{
-        display:none;
-    }
-    #bio{
-        margin-left:0em;
-        font-size:.875em;
-    }
-    #bio a{
-        border-bottom: none;
-    }
-
-    #sidebar{
-        padding:0em;
-        font-size:.875em;
-        border:none;
-    }
-
-    #sidebar h3{
-        font-size:1.25em;
-        margin:0;
-        border:none;
     } */
+}
 

@@ -21,31 +21,13 @@
     <link rel="stylesheet" media="Screen and (max-width:1024px)" type="text/css" href="css/stylesMobile.css"/>
   </head>
   
-    <nav class="desktop navbar navbar-expand navbar-light bg-light header" aria-label="Fourth navbar example">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"><h1>Jonathan Lindstrom</h1></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div style = "float:right">
-        <div class="collapse navbar-collapse" id="navbarsExample04">
-          <ul class="navbar-nav me-auto mb-2 mb-md-0">
-            <li class="nav-item">
-              <a class="nav-link" id = "scrollPortfolio" href="portfolio.html">Work</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" id = "scrollTop" aria-current="page" href="about.html">About</a>
-            </li>
-           
-           
-           
-          </ul>
-        </div>
-         
-        </div>
+  <nav class="desktop header" aria-label="Fourth navbar example">
+    <a href="index.html"><h1>Jonathan Lindstrom</h1></a>
+      <div class = "navigation">
+        <a class="nav-link  active" id = "scrollPortfolio" href="portfolio.html">Work</a>
+        <a class="nav-link" id = "scrollTop" aria-current="page" href="about.html">About</a>
       </div>
-      
-    </nav>
+  </nav>
    
       <div class = "mobile" id = "topbar">
         <nav class="navbar navbar-light bg-light">
@@ -89,9 +71,9 @@
           <p class="about-content tab">My approach involves a deep understanding of user needs, extensive research, and collaborative teamwork. I believe that every design decision should be purposeful and rooted in empathy, leading to products that are both intuitive and delightful to use.</p>
           
           <ul class="social-icons">
-            <li><a href="https://www.linkedin.com/in/jonathan-lindstrom/" class="social-icon-link" style = "color: #1ccd28;" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="https://www.instagram.com/jonathan_lindstrom14/" class="social-icon-link" style = "color: rgb(2, 163, 139);" target="_blank"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="mailto: lindstromhci@gmail.com" class="social-icon-link" style = "color: #236ecf;" target="_blank"><i class="fa-regular fa-envelope"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/jonathan-lindstrom/" class="social-icon-link" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://www.instagram.com/jonathan_lindstrom14/" class="social-icon-link"  target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="mailto: lindstromhci@gmail.com" class="social-icon-link"  target="_blank"><i class="fa-regular fa-envelope"></i></a></li>
             <!-- <li><a href="https://www.twitter.com/yourusername" class="social-icon-link" target="_blank"><i class="fa-regular fa-envelope"></i></a></li> -->
             <!-- <div class = "col-lg-4"> -->
              
@@ -124,9 +106,9 @@
           <p class="about-content tab">My approach involves a deep understanding of user needs, extensive research, and collaborative teamwork. I believe that every design decision should be purposeful and rooted in empathy, leading to products that are both intuitive and delightful to use.</p>
           
           <ul class="social-icons">
-            <li><a href="https://www.linkedin.com/in/jonathan-lindstrom/" class="social-icon-link" style = "color: #1ccd28;" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="https://www.instagram.com/jonathan_lindstrom14/" class="social-icon-link" style = "color: rgb(2, 163, 139);" target="_blank"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="mailto: lindstromhci@gmail.com" class="social-icon-link" style = "color: #236ecf;" target="_blank"><i class="fa-regular fa-envelope"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/jonathan-lindstrom/" class="social-icon-link" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://www.instagram.com/jonathan_lindstrom14/" class="social-icon-link" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="mailto: lindstromhci@gmail.com" class="social-icon-link"  target="_blank"><i class="fa-regular fa-envelope"></i></a></li>
             <!-- <li><a href="https://www.twitter.com/yourusername" class="social-icon-link" target="_blank"><i class="fa-regular fa-envelope"></i></a></li> -->
            
             
@@ -211,73 +193,22 @@
     </section>
    
 
-    <!-- <script>
-      // document.getElementById('scrollArrow').addEventListener('click', function() {
-      //   window.scrollTo({ top: window.innerHeight, behavior: 'smooth' });
-      // });
-      const navLinks = document.querySelectorAll('nav li');
-      document.getElementById('scrollPortfolio').addEventListener('click', function() {
-        navLinks.forEach(link => link.classList.remove('active'));
-        navLinks[1].classList.add('active');
-
-        window.scrollTo({ top: window.innerHeight, behavior: 'smooth' });
-       
-      });
-      document.getElementById('scrollTop').addEventListener('click', function() {
-        navLinks.forEach(link => link.classList.remove('active'));
-        navLinks[0].classList.add('active');
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      });
-      
    
-    const sections = document.querySelectorAll('section');
-
-
-
-
-function scrollToSection(event) {
-  event.preventDefault();
-  const targetId = event.currentTarget.getAttribute('href');
-  const targetSection = document.querySelector(targetId);
-  if (targetSection) {
-    targetSection.scrollIntoView({ behavior: 'smooth', block: 'start'});
-  }
-}
-
-// window.addEventListener('scroll', checkSectionInView);
-// window.addEventListener('resize', checkSectionInView);
-
-
-
-navLinks.forEach(link => {
-  link.addEventListener('click', scrollToSection);
-});
-
-    </script> -->
-    
-
-
-    <!-- <footer>
-      <ul class="social-icons">
-        <li><a href="https://www.linkedin.com/in/yourusername" class="social-icon-link" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-        <li><a href="https://www.twitter.com/yourusername" class="social-icon-link" target="_blank"><i class="fab fa-instagram"></i></a></li>
-      </ul>
-    </footer> -->
     <footer>
       <hr>
       <div class = "row">
         <div class = "col-lg-4 gradient">
           <ul class="social-icons">
-            <li>Made From Scratch.</li>
+            <!-- <li>Made From Scratch.</li> -->
             <!-- <li><a href="https://www.twitter.com/yourusername" class="social-icon-link" target="_blank"><i class="fa-regular fa-envelope"></i></a></li> -->
           </ul>
         </div>
         <div class = "col-lg-4"></div>
         <div class = "col-lg-4 gradient">
         <ul class="social-icons">
-          <li><a href="https://www.linkedin.com/in/jonathan-lindstrom/" class="social-icon-link" style = "color: #1ccd28;" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-          <li><a href="https://www.instagram.com/jonathan_lindstrom14/" class="social-icon-link" style = "color: rgb(2, 163, 139);" target="_blank"><i class="fab fa-instagram"></i></a></li>
-          <li><a href="mailto: lindstromhci@gmail.com" class="social-icon-link" style = "color: #236ecf;" target="_blank"><i class="fa-regular fa-envelope"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/jonathan-lindstrom/" class="social-icon-link"  target="_blank"><i class="fab fa-linkedin"></i></a></li>
+          <li><a href="https://www.instagram.com/jonathan_lindstrom14/" class="social-icon-link"  target="_blank"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="mailto: lindstromhci@gmail.com" class="social-icon-link"  target="_blank"><i class="fa-regular fa-envelope"></i></a></li>
           <!-- <li><a href="https://www.twitter.com/yourusername" class="social-icon-link" target="_blank"><i class="fa-regular fa-envelope"></i></a></li> -->
         </ul>
       </div>

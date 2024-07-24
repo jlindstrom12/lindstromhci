@@ -1,6 +1,14 @@
+:root {
+    --primary-color: #1e1e1e; 
+    /* --secondary-color: #2ecc71;  */
+    --accent-color:#046169; /* Red */
+    --background-color: #ffffff; /* Light Gray */
+    --text-color: #2f2f2f; /* Dark Gray */
+    --border-color: #bdc3c7; /* Gray */
+  }
 
 .text {
-    color:black;
+    color:var(--text-color);
     font-size: 15px;
     padding-top: 12px;
     padding-bottom: 12px;
@@ -8,50 +16,23 @@
     bottom: 0;
     width: 100%;
     text-align: center;
-    background-color: #D9D9D9;
-    transition: 0.3s;
-   
-    
+    /* background-color: #D9D9D9; */
+    transition: 0.3s;   
 }
 
 .project{
     margin-left:0;
     margin-bottom:24px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
     outline:none;
-    height: 35vh;
+    height: 450px;
     width:100%;
     overflow:hidden;
     margin-top:0;
-   
-    /* 
-    width:100%;
-    position: relative;
-   
-    
-    
-   
-   
-   
-    object-fit:cover; */
 }
-/* .project:hover{
-    height:45vh;
-    transition: .3s;
-} */
 
 
 
-.carousel:hover .card-body, .project:hover .card-body {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background-color: #ECECEC;
-    color:#2f2f2f;;
-
-}
 
 
 .project img {
@@ -61,17 +42,7 @@
 }
 
 
-
-
-/* .mySlides img:hover {
-    -webkit-filter: blur(100px) grayscale(100%); /* Chrome, Safari, Opera */
-    /*filter: blur(100px) grayscale(100%);
-
-
-/* } */
-
-
-.carousel:hover .secret, .project:hover .secret {
+.project:hover .secret {
     display:block;
     line-height:1.5em;
 
@@ -87,46 +58,13 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-    background-color: #ECECEC;
-    color:#2f2f2f;;
+    background-color: var(--background-color);
+    color:var(--text-color);;
     transition: .3s;
     
 }
 
-.card_title{
-    text-align:center;
-}
-.carousel{
-    margin-bottom: 4%;
-}
 
-
-.carousel .carousel-item {
-    height:55vh;
-   
-  }
-
-  .pics .carousel-item {
-    height:55vh;
-  }
- 
-  .carousel-item img {
-      width:100%;
-      height:auto;
-      position: absolute;
-      object-fit: cover;
-      top: 0;
-      left: 0;
-      max-height: 100%;
-  }
-
-  .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
-    /* background-color: #007BFF; */
-    color: #000;
-    /* border-color: transparent; */
-}
-
-/* Customize the tab link text color */
 .nav-tabs .nav-link {
     color: #333;
 }
@@ -146,95 +84,4 @@
     font-weight:bold;
 }
 
-  /* .text {
-    color: black;
-    font-size: 15px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    background-color: #D9D9D9;
-    transition: 0.3s;
-}
-
-.project {
-    max-width: 35vw;
-    width: 100%;
-    position: relative;
-    margin: 3%;
-    overflow: hidden;
-    height: 40vh;
-    margin-top: 0;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    outline: none;
-}
-
-.carousel:hover .card-body,
-.project:hover .card-body {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background-color: #ECECEC;
-    color: #000;
-}
-
-.project img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover; 
-}
-
-.project .secret {
-    display: block;
-    line-height: 1.5em;
-}
-
-.card {
-    outline: none;
-}
-
-.card-body {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background-color: #ECECEC;
-    color: #000;
-    transition: .3s;
-}
-
-.card_title {
-    text-align: center;
-}
-
-.carousel {
-    margin-bottom: 4%;
-}
-
-.carousel .carousel-item {
-    height: 55vh;
-}
-
-.pics .carousel-item {
-    height: 55vh;
-}
-
-.carousel-item img {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    object-fit: cover;
-    top: 0;
-    left: 0;
-    max-height: 100%;
-} */
-
-
   
-
-

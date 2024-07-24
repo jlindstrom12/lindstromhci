@@ -42,16 +42,19 @@
       <script>
         let n = 800;
         let ps = [];
-        // let squareSize = 800;
-    
+        const hueStart = 170;
+        const hueEnd = 210;
+        const saturation = 80; // Adjust saturation level for teal tones
+        const brightness = 80; // Adjust brightness level for teal tones
+
         function setup() {
           createCanvas(windowWidth, windowHeight);
           squareSize = min(width, height) / 1.5;
-         
+          
           for (let i = 0; i < n; i++) {
             ps.push({ vector: createVector(random(width), random(height)), timestamp: millis() });
           }
-          colorMode(HSB, 360, 100, 100); // Use HSB color mode for colorful visuals
+          colorMode(HSB, 360, 100, 100); // Use HSB color mode
           background(255); // Set initial white background
         }
         
@@ -75,9 +78,9 @@
             let opacity = map(distanceToCenter, 0, squareSize / 2, 255, 0);
             
             // Generate a dynamic hue based on position and time
-            let hue = map(p.x, 0, width, 0, 360);
+            let hue = map(p.x, 0, width, hueStart, hueEnd);
             
-            stroke(hue, 100, 100, opacity); // Apply hue and opacity to stroke
+            stroke(hue, saturation, brightness, opacity); // Apply hue and opacity to stroke
             strokeWeight(1); // Set stroke weight
             
             point(p.x, p.y);

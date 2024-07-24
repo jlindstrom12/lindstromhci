@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head>
+    <!-- <script src="../assets/js/color-modes.js"></script> -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jonathan Lindstrom</title>
+    <link rel="shortcut icon" type="image/png" href="../Images/icon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link href="../css/topbar.css" rel="stylesheet">
+    <link href="../css/styles.css" rel="stylesheet">
+    <link href="../css/page.css" rel="stylesheet">
+    <link href="../css/project.css" rel="stylesheet">
+    <link rel="stylesheet" media="Screen and (max-width:1024px)" type="text/css" href="../css/stylesMobile.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+  </head>
+    
+<body>
+    <nav class="desktop header" aria-label="Fourth navbar example">
+        <a href="index.html"><h1>Jonathan Lindstrom</h1></a>
+          <div class = "navigation">
+            <a class="nav-link  active" id = "scrollPortfolio" href="portfolio.html">Work</a>
+            <a class="nav-link" id = "scrollTop" aria-current="page" href="about.html">About</a>
+          </div>
+    </nav>
+    <div class = "mobile" id = "topbar">
+        <nav class="navbar navbar-light bg-light">
+          <div class="container-fluid">
+           
+            <a class="navbar-brand" href="index.html"><h1>Jonathan Lindstrom</h1></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbars" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+      
+            <div class="collapse navbar-collapse" id="navbars">
+              <hr>
+              <ul class="navbar-nav me-auto mb-2">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../portfolio.html">Work</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link  active" aria-current="page" href="../about.html">About Me</a>
+                </li>
+               
+
+              </ul>
+              
+            </div>
+          </div>
+        </nav>
+      </div>
+
+
+    <!-- End Side Bar -->
+    <div id = "content"  class = "fade_in" >
+       
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 id="title">Loading...</h1>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="col-lg-10">
+                <p id="date">Loading date...</p>
+                <p id="team"></p>
+
+            </div>
+            <div class="col-lg-2" style="justify-content: center; text-align:center;">
+                <div class="btn-group but" role="group" onclick="history.back()" style="background-color: #232323; width: 100%;">
+                    <a class="btn btn-outline-light text-uppercase" role="button">Back</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+    
+        <div class="page_cover_img">
+            <img id="project_img" src="" alt="Project Image">
+        </div>
+    
+        <div id="fill_content"></div>
+        
+        <script src="./project_scripts/project_script.js" type="module"></script>
+
+        
+
+        
+
+         
+        
+          
+
+    
+    </div>
+      
+
+
+  
+    
+   
+    </body>
+
+</html>

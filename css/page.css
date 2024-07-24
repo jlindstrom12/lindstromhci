@@ -1,7 +1,6 @@
+
 iframe{
     margin:2em;
-
-
 }
 
 #video{
@@ -38,5 +37,6 @@ iframe{
 
 .page_cover_img img{
     width:100%;
+    margin-bottom:24px;
 }
 
