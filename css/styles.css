@@ -42,9 +42,7 @@ body {
     display:none;
 }
 
-.active{
-    font-weight:bold;
-}
+
 
 h1{
     color:var(--text-color);
