@@ -6,6 +6,7 @@ import { MoodMoji } from './MoodMoji.js';
 import { bokeh } from './bokeh.js';
 import { Faulty } from './faulty_robots.js';
 import { DREaM } from './DREaM.js';
+import { AuditSphere } from './AuditSphere.js';
 
 
 
@@ -82,6 +83,13 @@ function setProjectDetails() {
                 team: 'Team: Al Hassen, Luke Han, & Animesh Ghose',
                 imgSrc: './Images/Faulty_Robots/home_screen.png',
                 content: Faulty
+            },
+            'AuditSphere': {
+                title: 'AuditSphere: Collaborative GenAI Reporting Map',
+                date: 'Sep - Dec 2024',
+                team: 'Team: Isabella Shi, Victor Wang, & Maggie Chen',
+                imgSrc: './Images/AuditSphere/AuditSphereHome.png',
+                content: AuditSphere
             },
             // Add more projects here
             // 'AnotherProject': {
