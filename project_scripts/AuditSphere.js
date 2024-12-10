@@ -14,7 +14,7 @@ const AuditSphere = `
 
 <div class ="row">
     <div class="col-lg-12 project_images">
-    <img src = "../Images/AuditSphere/poster.png" alt = "Poster Submission for DEI Summer 2024">
+    <img src = "../Images/AuditSphere/Poster.png" alt = "Poster Submission for DEI Summer 2024">
     <p class = "project_caption">Poster Submission</p>
     </div>
 </div>
