@@ -23,8 +23,7 @@ const AuditSphere = `
 <div class = "row">
 <h2>Process</h2>
     <div class = "col-lg-12">
-        <p class = "tab">Throughout the class me and my group used a thourough process of interviews as well as user centered design and analysis methods such as affinity diagraming
-        , journey mapping, empathy mapping, crazy 8s, and storyboarding to get a strong understanding of our users, their needs, and any questions we have. We created all of our 
+        <p class = "tab">Throughout the class my group and I used a thourough process of interviews as well as user centered design and analysis methods such as affinity diagraming, journey mapping, empathy mapping, crazy 8s, and storyboarding to get a strong understanding of our users, their needs, and any questions we have. We created all of our 
         artifacts into a wall to see themes and connections between our different methods. All of this led us to our final assumption artifiact to help us solve the problem of GenAI Bias.</p>
 
        
@@ -60,7 +59,7 @@ const AuditSphere = `
 <div class ="row">
 <h2>Reflection</h2>
    <div class = "col-lg-12">
-        <p class="tab">Our work on AuditSphere was an interesting project that aimed at addressing the biases embedded in Generative AI systems while navigating the complexities of user motivation and impact. This project had us consider not only the technical aspects of AI but also the human behaviors that drive meaningful change in the world.</p>
+        <p class="tab">Our work on AuditSphere aimed at addressing the biases embedded in Generative AI systems while navigating the complexities of user motivation and impact. This project had us consider not only the technical aspects of AI but also the human behaviors that drive meaningful change in the world.</p>
 
         <p class="tab"><strong>User-Centered Design as a Driving Force</strong></p>
         <p class="tab">One of the most valuable lessons from this project was the critical role of user-centered research in solving complex societal and technological issues. By employing tools like empathy mapping and journey mapping as well as numerous interviews among other user research methods we uncovered pain points such as users feeling unmotivated, powerless, or uncertain about how to combat AI bias. These insights informed our design approach, leading us to create an interactive, empowering, and community-driven solution. By visualizing users' collective impact, AuditSphere aimed to solve the motivation barriers and foster a sense of unity among reporters in hopes of encouraging participation.</p>
@@ -71,7 +70,7 @@ const AuditSphere = `
         <p class="tab"><strong>Reflection on My Role and Growth</strong></p>
         <p class="tab">My contributions to AuditSphere highlight my ability to blend research and design to create impactful solutions. From analyzing user data to synthesizing insights into actionable design elements, I have strengthened my skills in aligning technical possibilities with human needs. Revisiting my initial learning goals for the semester, I can confidently say that I have grown as a multidisciplinary UX contributor as well as gained skills I can bring into my more technically focused courses as an Information Systems Major. This project has refined my ability to collaborate, ideate, and advocate for users in complex systems—a skill set I aim to bring to future teams and challenges.</p>
 
-    
+
 
     
 </div>
