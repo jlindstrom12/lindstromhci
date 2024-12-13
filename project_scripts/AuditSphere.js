@@ -60,10 +60,18 @@ const AuditSphere = `
 <div class ="row">
 <h2>Reflection</h2>
    <div class = "col-lg-12">
-        <p class = "tab"><p class = "tab">Our work on AuditSphere highlighted the complex challenge of addressing biases in Generative AI systems while balancing user motivation and awareness. This project was a journey of understanding not only the technical problem but also the human behaviors that influence meaningful change.</p>
-        <p class = "tab"><p class = "tab">One of the biggest takeaways from our process was recognizing the importance of user-centered design in tackling societal and technological issues. Through methods like empathy mapping and journey mapping, we were able to identify pain points such as users feeling isolated, powerless, or unaware of how to act against AI bias. These insights guided us to design a solution that is interactive, empowering, and community-driven. By visualizing users' collective impact, we aimed to reduce motivation barriers and foster a sense of unity among reporters.</p>
-        <p class = "tab"><p class = "tab">Furthermore, the iterative process of ideation—from Crazy 8s to storyboarding—demonstrated the value of creative exploration. It allowed us to experiment with multiple design ideas, refine assumptions, and arrive at a solution that aligns with user needs and behaviors. Building artifacts such as the affinity diagram wall helped us uncover connections between user data and solidify key themes, providing a robust foundation for our application.</p>
-        <p class = "tab"><p class = "tab">Ultimately, the development of AuditSphere reinforced the importance of design thinking in solving real-world problems. By empowering users to report biases and fostering a global community, we hope to contribute to creating more equitable AI systems. This experience has taught us that technology alone cannot solve problems—thoughtful, human-centered design is essential to driving progress and building trust in the systems we create.</p>
+        <p class="tab">Our work on AuditSphere was an interesting project that aimed at addressing the biases embedded in Generative AI systems while navigating the complexities of user motivation and impact. This project had us consider not only the technical aspects of AI but also the human behaviors that drive meaningful change in the world.</p>
+
+        <p class="tab"><strong>User-Centered Design as a Driving Force</strong></p>
+        <p class="tab">One of the most valuable lessons from this project was the critical role of user-centered research in solving complex societal and technological issues. By employing tools like empathy mapping and journey mapping as well as numerous interviews among other user research methods we uncovered pain points such as users feeling unmotivated, powerless, or uncertain about how to combat AI bias. These insights informed our design approach, leading us to create an interactive, empowering, and community-driven solution. By visualizing users' collective impact, AuditSphere aimed to solve the motivation barriers and foster a sense of unity among reporters in hopes of encouraging participation.</p>
+
+        <p class="tab"><strong>Driving Impact Through Thoughtful Design</strong></p>
+        <p class="tab">The development of our AuditSphere prototype was a challenge in of itself. We were tying to figure out how to address all of our insights and customer pain points while driving progress and attempting to build trust in the systems we create. There was many factors to consider in our final design but overall I am happy with the map approach that we took.</p>
+
+        <p class="tab"><strong>Reflection on My Role and Growth</strong></p>
+        <p class="tab">My contributions to AuditSphere highlight my ability to blend research and design to create impactful solutions. From analyzing user data to synthesizing insights into actionable design elements, I have strengthened my skills in aligning technical possibilities with human needs. Revisiting my initial learning goals for the semester, I can confidently say that I have grown as a multidisciplinary UX contributor as well as gained skills I can bring into my more technically focused courses as an Information Systems Major. This project has refined my ability to collaborate, ideate, and advocate for users in complex systems—a skill set I aim to bring to future teams and challenges.</p>
+
+    
 
     
 </div>
